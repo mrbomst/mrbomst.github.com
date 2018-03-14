@@ -3,7 +3,7 @@ Package: com.mrbomst.gravity
 Version: 0.5
 Architecture: iphoneos-arm
 Maintainer: mrbomst
-Filename: debs//com.mrbomst.gravity_0.5_iphoneos-arm.deb
+Filename: /com.mrbomst.gravity_0.5_iphoneos-arm.deb
 Size: 102848
 MD5sum: 273e4e7dcf3f1dfd89ea6377b86b6541
 SHA1: 5c9c3ebc73c8dd930bf9547e6ddae33acfc633d3
