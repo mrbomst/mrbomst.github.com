@@ -1,0 +1,16 @@
+
+Package: com.mrbomst.gravity
+Architecture: iphoneos-arm
+Version: 0.5
+Section: Tweaks
+Maintainer: mrbomst
+Depends: mobilesubstrate, preferenceloader
+Filename: /com.mrbomst.gravity_0.5_iphoneos-arm.deb
+Size: 102848
+MD5sum: 273e4e7dcf3f1dfd89ea6377b86b6541
+Homepage: http://twitter.com/theanhst92
+Description: Graviboard alternative
+Name: Gravity
+Author: mrbomst <ios.appcrack@gmail.com>
+Icon: file:///Library/PreferenceBundles/Gravity.bundle/icon@2x.png
+Depiction: http://mrbomst.github.io/description.html?id=com.mrbomst.gravity
