@@ -1,4 +1,4 @@
-Package: com.imkpatil.colormybattery
+Package: com.mrbomst.colormybattery
 Version: 1.0-5+debug
 Architecture: iphoneos-arm
 Maintainer: Kiran Patil
@@ -12,7 +12,7 @@ SHA256: 77e90717e43d7c9496376461704adfef372c21106439b723f22324f2bf034e27
 Section: Tweaks
 Description: Battery Color based on the battery percentage.
 Author: Kiran Patil
-Depiction: https://imkpatil.github.io/repo/depiction/ColorMyBattery/index.html
+Depiction: https://mrbomst.github.io/depiction/ColorMyBattery/index.html
 Icon: file:///Library/Application Support/ColorMyBattery/icon.png
 Name: ColorMyBattery
 
@@ -51,7 +51,7 @@ Author: Kiran Patil
 Depiction: https://mrbomst.github.io/depiction/SpotCC/index.html
 Name: SpotCC
 
-Package: com.imkpatil.spotclearonclose
+Package: com.mrbomst.spotclearonclose
 Version: 0.0.9-1+debug
 Architecture: iphoneos-arm
 Maintainer: Kiran Patil
@@ -65,10 +65,10 @@ SHA256: 8517aaa28b8bfc458dba30593f84a26397afc42e8ef4dbbffbbaaadf670f063d
 Section: Tweaks
 Description: SpotClearOnClose clears your spotlight results/search so that when you open it the next time, you don't have to deal with the last search's Text/results!
 Author: Kiran Patil
-Depiction: https://imkpatil.github.io/repo/depiction/SpotClearOnClose/index.html
+Depiction: https://mrbomst.github.io/depiction/SpotClearOnClose/index.html
 Name: SpotClearOnClose
 
-Package: com.imkpatil.trashfromls
+Package: com.mrbomst.trashfromls
 Version: 1.0.0-28+debug
 Architecture: iphoneos-arm
 Maintainer: Kiran Patil
@@ -82,6 +82,6 @@ SHA256: e317b8687d53ad6d3748bdebc90a7e49edbc08aeece210acced692a2935c934a
 Section: Tweaks
 Description: A Simple Tweak that allows deleting emails from LockScreen without asking for Password Confirmation.
 Author: Kiran Patil
-Depiction: https://imkpatil.github.io/repo/depiction/TrashFromLS/index.html
+Depiction: https://mrbomst.github.io/depiction/TrashFromLS/index.html
 Icon: file:///Libary/TrashFromLS/TweakIcon.png
 Name: TrashFromLS
