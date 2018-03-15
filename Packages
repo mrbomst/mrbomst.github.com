@@ -52,7 +52,7 @@ Depiction: https://mrbomst.github.io/depiction/SpotCC/index.html
 Name: SpotCC
 
 Package: com.mrbomst.spotclearonclose
-Version: 0.0.9-1+debug
+Version: 1.0.9-1+debug
 Architecture: iphoneos-arm
 Maintainer: Kiran Patil
 Installed-Size: 72
