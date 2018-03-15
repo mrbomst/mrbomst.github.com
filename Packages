@@ -34,7 +34,7 @@ Depiction: https://mrbomst.github.io/depiction/LetMeKnow/index.html
 Icon: file:///Library/Application Support/LetMeKnow/Tweakicon.png
 Name: LetMeKnow
 
-Package: com.imkpatil.spotcc
+Package: com.mrbomst.spotcc
 Version: 0.0.9-1+debug
 Architecture: iphoneos-arm
 Maintainer: Kiran Patil
@@ -48,7 +48,7 @@ SHA256: 845ebab777148b94a55e7c3b87beb6792a49a1ba3360f4f9ffa17a5b96f71e57
 Section: Tweaks
 Description: Tweak to bring up ControlCenter instead of Spotlight on the HomeScreen.
 Author: Kiran Patil
-Depiction: https://imkpatil.github.io/repo/depiction/SpotCC/index.html
+Depiction: https://mrbomst.github.io/depiction/SpotCC/index.html
 Name: SpotCC
 
 Package: com.imkpatil.spotclearonclose
