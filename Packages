@@ -16,7 +16,7 @@ Depiction: https://imkpatil.github.io/repo/depiction/ColorMyBattery/index.html
 Icon: file:///Library/Application Support/ColorMyBattery/icon.png
 Name: ColorMyBattery
 
-Package: com.imkpatil.letmeknow
+Package: com.mrbomst.letmeknow
 Version: 1.2-1
 Architecture: iphoneos-arm
 Maintainer: Kiran Patil
@@ -30,7 +30,7 @@ SHA256: 773bc79f3fe6af23bc5baba08f81174973b5585e20850454fbbd37b08000346c
 Section: Tweaks
 Description: This tweak will let you know exactly when the call connects/disconnects so that you don't have to keep holding!
 Author: Kiran Patil
-Depiction: https://imkpatil.github.io/repo/depiction/LetMeKnow/index.html
+Depiction: https://mrbomst.github.io/depiction/LetMeKnow/index.html
 Icon: file:///Library/Application Support/LetMeKnow/Tweakicon.png
 Name: LetMeKnow
 
