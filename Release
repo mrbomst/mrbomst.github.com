@@ -1,9 +1,9 @@
-Origin: Kiran Patil's Repo
-Label: imkpatil
+Origin: Mrbom's Repo
+Label: Mrbomst
 Suite: stable
 Version: 1.0
-Codename: imkpatil
+Codename: Mrbomst
 Architectures: iphoneos-arm
 Components: main
-Description: Tweaks from imkpatil
+Description: Tweaks from Mrbomst
 Icon: file://CydiaIcon.png
