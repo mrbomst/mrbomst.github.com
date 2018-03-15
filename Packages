@@ -19,20 +19,21 @@ Name: ColorMyBattery
 Package: com.mrbomst.letmeknow
 Version: 1.2-1
 Architecture: iphoneos-arm
-Maintainer: Kiran Patil
+Maintainer: Mrbom
 Installed-Size: 216
 Depends: mobilesubstrate
-Filename: ./debs/com.imkpatil.letmeknow_1.2-1_iphoneos-arm.deb
-Size: 23578
-MD5sum: 92f6ff4242709b15adacecd05a2fe7c0
-SHA1: e2140b6839740c6738ba84b2206187c4cb23b3c6
-SHA256: 773bc79f3fe6af23bc5baba08f81174973b5585e20850454fbbd37b08000346c
-Section: Tweaks
+Filename: ./debs/com.mrbomst.letmeknow_1.2-1_iphoneos-arm.deb
+Size: 23618
+MD5sum: 297592897020b042cde8bc2a58b33300
+SHA1: d71f6681362ae22059df2cce124e0c9c687d9ffc
+SHA256: 1629b6e897af1ba5f3fb03da0d5561fe73cf9167e6b09806549bbdad8e5e71b3
+Section: Section: Tweak ( Supports ios 11)
 Description: This tweak will let you know exactly when the call connects/disconnects so that you don't have to keep holding!
 Author: Kiran Patil
 Depiction: https://mrbomst.github.io/depiction/LetMeKnow/index.html
 Icon: file:///Library/Application Support/LetMeKnow/Tweakicon.png
 Name: LetMeKnow
+
 
 Package: com.mrbomst.spotcc
 Version: 0.0.9-1+debug
@@ -85,17 +86,3 @@ Author: Kiran Patil
 Depiction: https://mrbomst.github.io/depiction/TrashFromLS/index.html
 Icon: file:///Libary/TrashFromLS/TweakIcon.png
 Name: TrashFromLS
-
-Package: Ex: com.frostzone.helloworld
-Version: 0.0.1
-Architecture: iphoneos-arm
-Maintainer: iPwned <test@email.com>
-Filename: /com.mrbomst.spotcc_0.0.9-1+debug_iphoneos-arm.deb
-Size: 3414
-MD5sum: 96ee5895e8871b93ab2a6ea228a9354d
-SHA1: 75eaffbdf94d13dbd1d3873ea77e11e89826102c
-SHA256: fd1d4850206ecdb59f7b07e13589b8a8ec833e5f6c85b4b576686f10535e7214
-Section: Ex: Tweaks, Theme
-Description: An awesome mobile substrate tweak
-Author: iPwned <test@email.com>
-Name: Tweak name
