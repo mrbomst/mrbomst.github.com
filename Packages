@@ -37,15 +37,15 @@ Name: LetMeKnow
 Package: com.mrbomst.spotcc
 Version: 0.0.9-1+debug
 Architecture: iphoneos-arm
-Maintainer: Kiran Patil
+Maintainer: Mrbom
 Installed-Size: 120
 Depends: mobilesubstrate
 Filename: ./debs/com.imkpatil.spotcc_0.0.9-1+debug_iphoneos-arm.deb
-Size: 3382
-MD5sum: b505d066249a50d07083b388c87ab55d
-SHA1: 44af51f859a50c3b62e3c2a5d21a5db22ece6d0a
-SHA256: 845ebab777148b94a55e7c3b87beb6792a49a1ba3360f4f9ffa17a5b96f71e57
-Section: Tweaks
+Size: 3414
+MD5sum: 96ee5895e8871b93ab2a6ea228a9354d
+SHA1: 75eaffbdf94d13dbd1d3873ea77e11e89826102c
+SHA256: fd1d4850206ecdb59f7b07e13589b8a8ec833e5f6c85b4b576686f10535e7214
+Section: Tweaks (Supports ios 11)
 Description: Tweak to bring up ControlCenter instead of Spotlight on the HomeScreen.
 Author: Kiran Patil
 Depiction: https://mrbomst.github.io/depiction/SpotCC/index.html
@@ -85,3 +85,17 @@ Author: Kiran Patil
 Depiction: https://mrbomst.github.io/depiction/TrashFromLS/index.html
 Icon: file:///Libary/TrashFromLS/TweakIcon.png
 Name: TrashFromLS
+
+Package: Ex: com.frostzone.helloworld
+Version: 0.0.1
+Architecture: iphoneos-arm
+Maintainer: iPwned <test@email.com>
+Filename: /com.mrbomst.spotcc_0.0.9-1+debug_iphoneos-arm.deb
+Size: 3414
+MD5sum: 96ee5895e8871b93ab2a6ea228a9354d
+SHA1: 75eaffbdf94d13dbd1d3873ea77e11e89826102c
+SHA256: fd1d4850206ecdb59f7b07e13589b8a8ec833e5f6c85b4b576686f10535e7214
+Section: Ex: Tweaks, Theme
+Description: An awesome mobile substrate tweak
+Author: iPwned <test@email.com>
+Name: Tweak name
