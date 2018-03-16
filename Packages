@@ -27,7 +27,7 @@ Size: 23618
 MD5sum: 297592897020b042cde8bc2a58b33300
 SHA1: d71f6681362ae22059df2cce124e0c9c687d9ffc
 SHA256: 1629b6e897af1ba5f3fb03da0d5561fe73cf9167e6b09806549bbdad8e5e71b3
-Section: Section: Tweak (Supports ios 11)
+Section: Tweak (Supports ios 11)
 Description: This tweak will let you know exactly when the call connects/disconnects so that you don't have to keep holding!
 Author: Kiran Patil
 Depiction: https://mrbomst.github.io/depiction/LetMeKnow/index.html
