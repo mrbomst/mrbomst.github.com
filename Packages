@@ -20,7 +20,6 @@ Package: com.mrbomst.letmeknow
 Version: 1.2-1
 Architecture: iphoneos-arm
 Maintainer: Mrbom
-Installed-Size: 216
 Depends: mobilesubstrate
 Filename: ./debs/com.mrbomst.letmeknow_1.2-1_iphoneos-arm.deb
 Size: 23618

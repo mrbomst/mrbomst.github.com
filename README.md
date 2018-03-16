@@ -5,7 +5,7 @@ Welcome to my Cydia Repo.
 
 Email - ios.appcrack@gmail.com
 
-<<<<<<< HEAD
+<<<<<<< HEAD >>>>>>>
 
 Reddit - [/u/mr_____bom](https://www.reddit.com/user/mr_____bom/)
 
