@@ -1,0 +1,14 @@
+
+Package: com.mrbomst.letmeknow
+Version: 1.2-1
+Architecture: iphoneos-arm
+Maintainer: mrbomst <ios.appcrack@gmail.com>
+Filename: /com.mrbomst.letmeknow_1.2-1_iphoneos-arm.deb
+Size: 23646
+MD5sum: 782f919c61742b7c3c7cb402094c3534
+SHA1: 6fe99863ee678dd76b99358f703d9f6ffd378df9
+SHA256: 21b5a122750d2610705be5366e187db1014fe492e5943d8c1198ef6e5639897b
+Section: Tweaks (Supports ios 11)
+Description: This tweak will let you know exactly when the call connects/disconnects so that you don't have to keep holding!
+Author: Kiran Patil
+Name: LetMeKnow
