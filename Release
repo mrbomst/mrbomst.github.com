@@ -1,9 +1,9 @@
-Origin: Mrbom's Repo
-Label: Mrbomst
+Origin: CydiaVN
+Label: CydiaVN
 Suite: stable
 Version: 1.0
-Codename: Mrbomst
+Codename: CydiaVN
 Architectures: iphoneos-arm
 Components: main
-Description: Tweaks from Mrbomst
+Description: Tweaks from CydiaVN
 Icon: file://CydiaIcon.png
