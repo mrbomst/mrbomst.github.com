@@ -47,3 +47,18 @@ Description: Hack vip app Spotify
 Author: Mrbomst
 Depiction: https://mrbomst.github.io/depiction/Spotify/index.html
 Name: SpotifyVip
+
+Package: com.mrbomst.icleaner
+Version: 1.0.0
+Architecture: iphoneos-arm
+Maintainer: Mrbomst <ios.appcrack@gmail.com>
+Filename: ./debs/com.mrbomst.icleaner_1.0.0_iphoneos-arm.deb
+Size: 41218
+MD5sum: dc5d3a839d788f87ed3b5f0bae222ce3
+SHA1: e47ea09e02e58f766107f626140fe912e6e7af6d
+SHA256: 0ff9ae65898742d23cb7fc2dd35316c224da67c0baa3885aa74f891e0d6043cb
+Section: Tweaks (Hacks)
+Description: Hack vip tweak icleanerpro
+Author: Mrbomst
+Depiction: https://mrbomst.github.io/depiction/icleanercrack/index.html
+Name: Hack icleaner
