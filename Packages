@@ -1,3 +1,20 @@
+Package: com.cydiavn.colormybattery
+Version: 1.0-5+debug
+Architecture: iphoneos-arm
+Maintainer: CydiaVN <ios.appcrack@gmail.com>
+Depends: mobilesubstrate, org.thebigboss.libcolorpicker
+Filename: ./debs/com.cydiavn.colormybattery_1.0-5+debug_iphoneos-arm.deb
+Size: 37808
+MD5sum: 13d366f0a59f89c0ed1a2087d51344d7
+SHA1: e396365446f2f33c2a118a8f8bdc05898e38e2e6
+SHA256: 3048ff8d9507314798010fcac90e66d5258165cce69eecb5dab9844b4ed56f65
+Section: Tweaks
+Description: Battery Color based on the battery percentage.
+Author: Kiran Patil
+Depiction: https://mrbomst.github.io/depiction/ColorMyBattery/index.html
+Icon: file:///Library/Application Support/ColorMyBattery/icon.png
+Name: ColorMyBattery
+
 Package: com.mrbomst.aphimvip
 Version: 1.0.1
 Architecture: iphoneos-arm
