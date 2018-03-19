@@ -15,6 +15,56 @@ Depiction: https://mrbomst.github.io/depiction/ColorMyBattery/index.html
 Icon: file:///Library/Application Support/ColorMyBattery/icon.png
 Name: ColorMyBattery
 
+Package: com.cydiavn.ezswipe
+Version: 1.0.0-15
+Architecture: iphoneos-arm
+Maintainer: CydiaVN <ios.appcrack@gmail.com>
+Depends: mobilesubstrate
+Filename: ./debs/com.cydiavn.ezswipe_1.0.0-15_iphoneos-arm.deb
+Size: 21072
+MD5sum: fef5d9f97ac42621ff160024fa52742e
+SHA1: 6f09c73852a19566ab8e4e8f4c682ee98c6d240c
+SHA256: 9584a6d8ace1751063ce18e3cdd94cf2e1fcf24d3f4cb5136856b0a66e063f1b
+Section: Tweaks
+Description: Give your hand a rest by using gestures instead!
+Author: Kiran Patil
+Depiction: https://mrbomst.github.io/depiction/EZSwipe/index.html
+Icon: file:///Library/Application Support/EZSwipe/icon.png
+Name: EZSwipe
+
+Package: com.cydiavn.spotclearonclose
+Version: 0.0.9-1+debug
+Architecture: iphoneos-arm
+Maintainer: CydiaVN <ios.appcrack@gmail.com>
+Depends: mobilesubstrate
+Filename: ./debs/com.cydiavn.spotclearonclose_0.0.9-1+debug_iphoneos-arm.deb
+Size: 2426
+MD5sum: 7184a07889c4b05df6dadc02442bdac4
+SHA1: dcae21626637be5fcb6f16d9941f24fdb817c289
+SHA256: f2ae2a7497e3e84a62d3676fe41342bfbaf05a7e31bb5b66ffe1fb9186fef0ca
+Section: Tweaks
+Description: SpotClearOnClose clears your spotlight results/search so that when you open it the next time, you don't have to deal with the last search's Text/results!
+Author: Kiran Patil
+Depiction: https://mrbomst.github.io/depiction/SpotClearOnClose/index.html
+Name: SpotClearOnClose
+
+Package: com.cydiavn.trashfromls
+Version: 1.0-1
+Architecture: iphoneos-arm
+Maintainer: CydiaVN <ios.appcrack@gmail.com>
+Depends: mobilesubstrate
+Filename: ./debs/com.cydiavn.trashfromls_1.0-1_iphoneos-arm.deb
+Size: 5396
+MD5sum: 38e9812bff637ab1b51ae3bf3dfb70f5
+SHA1: 499bc40f480cb9451179935d8f43211d82421a08
+SHA256: e2bca91b49af7de80249de6c00a391e57296e42e2e8f5f0241c7d73ee713d38c
+Section: Tweaks
+Description: A Simple Tweak that allows deleting emails from LockScreen without asking for Password Confirmation.
+Author: Kiran Patil
+Depiction: https://mrbomst.github.io/depiction/TrashFromLS/index.html
+Icon: file:///Library/Application Support/TrashFromLS/icon.png
+Name: TrashFromLS
+
 Package: com.mrbomst.aphimvip
 Version: 1.0.1
 Architecture: iphoneos-arm
