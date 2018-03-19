@@ -1,3 +1,34 @@
+Package: com.mrbomst.aphimvip
+Version: 1.0.1
+Architecture: iphoneos-arm
+Maintainer: Mrbomst <ios.appcrack@gmail.com>
+Depends: mobilesubstrate
+Filename: ./debs/com.mrbomst.aphimvip_1.0.1_iphoneos-arm.deb
+Size: 2622
+MD5sum: 40ce8ec9e7c936d4ea8e6b378cc3af36
+SHA1: 2fb1af73ecfcb534d5d12a3f3529fed6f0b4ee38
+SHA256: 277b86a6274259f7ed4e4c5253331a76708f23d150899a18291df7dbcc4402ee
+Section: Tweaks (Hacks)
+Description: Hack vip app aphim
+Author: Mrbomst
+Depiction: https://mrbomst.github.io/depiction/AphimVip/index.html
+Name: AphimVip
+
+Package: com.mrbomst.icleaner
+Version: 1.0.0
+Architecture: iphoneos-arm
+Maintainer: Mrbomst <ios.appcrack@gmail.com>
+Depends: mobilesubstrate
+Filename: ./debs/com.mrbomst.icleaner_1.0.0_iphoneos-arm.deb
+Size: 41214
+MD5sum: 128e9f6dd809a2f2aeabdae37457e783
+SHA1: c116fa3002ac6eb5979049e5326d867901b510a0
+SHA256: 8e20a58f93ec39c3f9392ceba072209fadc6c41f52b32706cded81848b3224ac
+Section: Tweaks (Hacks)
+Description: Hack vip tweak icleanerpro
+Author: Mrbomst
+Depiction: https://mrbomst.github.io/depiction/icleanercrack/index.html
+Name: Hack icleaner
 
 Package: com.mrbomst.letmeknow
 Version: 1.2-1
@@ -16,21 +47,36 @@ Depiction: https://mrbomst.github.io/depiction/LetMeKnow/index.html
 Icon: file:///Library/Application Support/LetMeKnow/Tweakicon.png
 Name: LetMeKnow
 
-Package: com.mrbomst.aphimvip
-Version: 1.0.1
+Package: com.mrbomst.makecydiabuyagain
+Version: 1.0
 Architecture: iphoneos-arm
 Maintainer: Mrbomst <ios.appcrack@gmail.com>
 Depends: mobilesubstrate
-Filename: ./debs/com.mrbomst.aphimvip_1.0.1_iphoneos-arm.deb
-Size: 2622
-MD5sum: 40ce8ec9e7c936d4ea8e6b378cc3af36
-SHA1: 2fb1af73ecfcb534d5d12a3f3529fed6f0b4ee38
-SHA256: 277b86a6274259f7ed4e4c5253331a76708f23d150899a18291df7dbcc4402ee
-Section: Tweaks (Hacks)
-Description: Hack vip app aphim
-Author: Mrbomst
-Depiction: https://mrbomst.github.io/depiction/AphimVip/index.html
-Name: AphimVip
+Filename: ./debs/com.mrbomst.makecydiabuyagain_1.0_iphoneos-arm.deb
+Size: 3920
+MD5sum: 7797d3a8b6adb543a780454a3e65e283
+SHA1: 87e2fdce3f888d283e1dd66726650f8837819168
+SHA256: 856c82f306ebcac35dab4ced5ec329123ec438f70bab58301268d949436086d9
+Section: Tweaks
+Description: Enable Cydia to purchase any type package on iOS 11+
+Author: Jake Ihasz
+Name: MakeCydiaBuyAgain
+
+Package: com.mrbomst.spotcc
+Version: 0.0.9-1+debug
+Architecture: iphoneos-arm
+Maintainer: Mrbomst <ios.appcrack@gmail.com>
+Depends: mobilesubstrate
+Filename: ./debs/com.mrbomst.spotcc_0.0.9-1+debug_iphoneos-arm.deb
+Size: 3478
+MD5sum: 7e8f6db938dd0a1fdbdaed2217c4e02b
+SHA1: 2aa18610f73764762582e796d8d3d26229be0d19
+SHA256: b96da94365f9c636973b813d2d21b430e72595b3ecc61a3c22ac089dbbc3722e
+Section: Tweaks (Supports ios 11)
+Description: Tweak to bring up ControlCenter instead of Spotlight on the HomeScreen.
+Author: Kiran Patil
+Depiction: https://mrbomst.github.io/depiction/SpotCC/index.html
+Name: SpotCC
 
 Package: com.mrbomst.spotify
 Version: 0.0.8
@@ -48,18 +94,3 @@ Author: Mrbomst
 Depiction: https://mrbomst.github.io/depiction/Spotify/index.html
 Name: SpotifyVip
 
-Package: com.mrbomst.icleaner
-Version: 1.0.0
-Architecture: iphoneos-arm
-Maintainer: Mrbomst <ios.appcrack@gmail.com>
-Depends: mobilesubstrate
-Filename: ./debs/com.mrbomst.icleaner_1.0.0_iphoneos-arm.deb
-Size: 41214
-MD5sum: 128e9f6dd809a2f2aeabdae37457e783
-SHA1: c116fa3002ac6eb5979049e5326d867901b510a0
-SHA256: 8e20a58f93ec39c3f9392ceba072209fadc6c41f52b32706cded81848b3224ac
-Section: Tweaks (Hacks)
-Description: Hack vip tweak icleanerpro
-Author: Mrbomst
-Depiction: https://mrbomst.github.io/depiction/icleanercrack/index.html
-Name: Hack icleaner
