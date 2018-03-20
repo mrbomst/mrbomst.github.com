@@ -52,14 +52,13 @@ Package: com.cydiavn.texgyreadventer
 Version: 1.0
 Architecture: iphoneos-arm
 Maintainer: mrbomst <ios.appcrack@gmail.com>
-Depends: Anemone
 Filename: ./debs/com.cydiavn.texgyreadventer_1.0_iphoneos-arm.deb
-Size: 5090224
-MD5sum: 06c6f035aa37dd7ef5f1740cc8043478
-SHA1: 185a57d51aa44b15b6b122c043c108b7c94588a5
-SHA256: d8ed19d6d1b1d7659accb4ba6f02f69b2e7d188bbb2d340e4e79d19d2f96d2c1
+Size: 5090234
+MD5sum: 7cb0c2f12e2b73c8f9500f55e79ac25c
+SHA1: 0ca65cf7bdfed6422576541cb0b26190d5d99988
+SHA256: 9bdf7cec9d9ebb424392ddf1ae86e6d82071c8d77fb8c0205d2b1a5873cccc0f
 Section: Fonts
-Description: Font full TV on ios 10, 11.
+Description: Font full TV on ios 10, 11.(depends install Anemone)
 Author: Mrbomst
 Depiction: https://mrbomst.github.io/depiction/texgyreadventer/index.html
 Icon: file:///Library/Application Support/texgyreadventer/Fonticon.png
