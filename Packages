@@ -52,14 +52,14 @@ Package: com.cydiavn.texgyreadventer
 Version: 1.0
 Architecture: iphoneos-arm
 Maintainer: mrbomst <ios.appcrack@gmail.com>
-Depends: Anemone , winterboard
+Depends: Anemone
 Filename: ./debs/com.cydiavn.texgyreadventer_1.0_iphoneos-arm.deb
-Size: 5090252
-MD5sum: 661f9e886617ca67c4319d7812173175
-SHA1: e40cd2b016b5926d966d796e77fd486ff810bef5
-SHA256: 97ac33b9bb0e2dc347cc391305009c97e0823d9398feff6b7e9d571a13e3a3f2
+Size: 5090224
+MD5sum: 06c6f035aa37dd7ef5f1740cc8043478
+SHA1: 185a57d51aa44b15b6b122c043c108b7c94588a5
+SHA256: d8ed19d6d1b1d7659accb4ba6f02f69b2e7d188bbb2d340e4e79d19d2f96d2c1
 Section: Fonts
-Description: Font full tiếng việt cho ios 10, ios 11
+Description: Font full TV on ios 10, 11.
 Author: Mrbomst
 Depiction: https://mrbomst.github.io/depiction/texgyreadventer/index.html
 Icon: file:///Library/Application Support/texgyreadventer/Fonticon.png
