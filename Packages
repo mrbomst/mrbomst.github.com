@@ -48,6 +48,23 @@ Author: Kiran Patil
 Depiction: https://mrbomst.github.io/depiction/SpotClearOnClose/index.html
 Name: SpotClearOnClose
 
+Package: com.cydiavn.texgyreadventer
+Version: 1.0
+Architecture: iphoneos-arm
+Maintainer: mrbomst <ios.appcrack@gmail.com>
+Depends: Anemone , winterboard
+Filename: ./debs/com.cydiavn.texgyreadventer_1.0_iphoneos-arm.deb
+Size: 5090252
+MD5sum: 661f9e886617ca67c4319d7812173175
+SHA1: e40cd2b016b5926d966d796e77fd486ff810bef5
+SHA256: 97ac33b9bb0e2dc347cc391305009c97e0823d9398feff6b7e9d571a13e3a3f2
+Section: Fonts
+Description: Font full tiếng việt cho ios 10, ios 11
+Author: Mrbomst
+Depiction: https://mrbomst.github.io/depiction/texgyreadventer/index.html
+Icon: file:///Library/Application Support/texgyreadventer/Fonticon.png
+Name: Font Tex gyre adventer
+
 Package: com.cydiavn.trashfromls
 Version: 1.0-1
 Architecture: iphoneos-arm
