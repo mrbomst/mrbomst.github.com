@@ -48,6 +48,23 @@ Depiction: https://mrbomst.github.io/depiction/futura/index.html
 Icon: file:///Library/Application Support/futura/Fonticon.png
 Name: Font Futura
 
+Package: com.cydiavn.smartlpm
+Version: 1.1.0
+Architecture: iphoneos-arm
+Maintainer: CydiaVN <ios.appcrack@gmail.com>
+Depends: mobilesubstrate
+Filename: ./debs/com.cydiavn.smartlpm_1.1.0_iphoneos-arm.deb
+Size: 15808
+MD5sum: 82d446e32745a4882dc06b66aeac17c3
+SHA1: d5f04821887f394fbf3370cbfd0138081941e6b0
+SHA256: 7e4718640e5f7f6b20aefcf8ddd3f5f61b78b9fe082f097660ac45ac09d4292d
+Section: Tweaks
+Description: A smarter low power mode. Turn low power mode on automatically at the battery level you specify. Enable low power while charging. Version 1.1.0: Removed low power on lock for now, was causing problems.
+Author: smokin1337
+Depiction: https://mrbomst.github.io/depiction/smartlpm/index.html
+Icon: file:///Library/Application Support/smartlpm/Tweakicon.png
+Name: SmartLPM
+
 Package: com.cydiavn.spotclearonclose
 Version: 0.0.9-1+debug
 Architecture: iphoneos-arm
