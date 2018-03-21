@@ -32,6 +32,22 @@ Depiction: https://mrbomst.github.io/depiction/EZSwipe/index.html
 Icon: file:///Library/Application Support/EZSwipe/icon.png
 Name: EZSwipe
 
+Package: com.cydiavn.futura
+Version: 1.0.0
+Architecture: iphoneos-arm
+Maintainer: Mrbomst <ios.appcrack@gmail.com>
+Filename: ./debs/com.cydiavn.futura_1.0.0_iphoneos-arm.deb
+Size: 5299794
+MD5sum: 3c607039980b228306f672b9e61848b3
+SHA1: 7a005791a702edb13c017ec2b528e3eaee12cf50
+SHA256: b7bd975a7392df597dfb63e6e352bf9da470d6399fcde3ba3ddc9b93bcbf4c5a
+Section: Fonts
+Description: Font full TV on ios 10, 11.(depends install Anemone)
+Author: Hatiato
+Depiction: https://mrbomst.github.io/depiction/futura/index.html
+Icon: file:///Library/Application Support/futura/Fonticon.png
+Name: Font Futura
+
 Package: com.cydiavn.spotclearonclose
 Version: 0.0.9-1+debug
 Architecture: iphoneos-arm
