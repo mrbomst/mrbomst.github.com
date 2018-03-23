@@ -38,6 +38,40 @@ Depiction: https://mrbomst.github.io/depiction/ColorMyBattery/index.html
 Icon: file:///Library/Application Support/ColorMyBattery/icon.png
 Name: ColorMyBattery
 
+Package: com.cydiavn.ezcc
+Version: 0.0.4
+Architecture: iphoneos-arm
+Depends: mobilesubstrate, com.cydiavn.silo
+Conflicts: com.m4cs.control-center.ezreboot, com.m4cs-dev.simalary.control-center.ezsecretsettings, com.clarke1234.ezcydiaopener
+Filename: ./debs/com.cydiavn.ezcc_0.0.4_iphoneos-arm.deb
+Size: 47936
+MD5sum: ba1f81806ab3c9ee8c523a66db77fb45
+SHA1: 3081ae189f25976595b0ab2d376beb7565c3afc7
+SHA256: 169751265b587fca9a1781e01eb764c18f318218557ecee1b56827b984e9b31e
+Section: Tweaks
+Homepage: http://mrbomst.github.io <ios.appcrack@gmail.com>
+Description: Complete Package for EzCC. Will be adding toggles to this packages only form now on!
+Author: M4cs, Simalary, Chilaxan, MidnightChips, Clarke1234, 5px <ios.appcrack@gmail.com>
+Depiction: http://mrbomst.github.io/depiction/EZCC/index.html
+Name: EzCC
+
+Package: com.cydiavn.ezccx
+Version: 1.0.1
+Architecture: iphoneos-arm
+Maintainer: CydiaVN <ios.appcrack@gmail.com>
+Depends: mobilesubstrate
+Filename: ./debs/com.cydiavn.ezccx_1.0.1_iphoneos-arm.deb
+Size: 9900
+MD5sum: a69458563286f2a15e8fafd1f539311b
+SHA1: 2364ea3590b76032a0f0be77c4af08abe1f97362
+SHA256: ada890a034cd93bd87e6ff74c021ef0426125806f187b5a8a7fd94eb38acf01f
+Section: Tweaks
+Homepage: http://mrbomst.github.io
+Description: Easier CC Access on iPhone X
+Author: CP Digital Darkroom
+Depiction: http://mrbomst.github.io/depiction/EZCCX/index.html
+Name: EZCCX
+
 Package: com.cydiavn.ezswipe
 Version: 1.0.0-15
 Architecture: iphoneos-arm
