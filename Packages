@@ -105,6 +105,22 @@ Depiction: https://mrbomst.github.io/depiction/futura/index.html
 Icon: file:///Library/Application Support/futura/Fonticon.png
 Name: Font Futura
 
+Package: com.cydiavn.silo
+Version: 1.0.0-4+debug
+Architecture: iphoneos-arm
+Maintainer: CydiaVN <ios.appcrack@gmail.com>
+Depends: mobilesubstrate
+Filename: ./debs/com.cydiavn.silo_1.0.0-4+debug_iphoneos-arm.deb
+Size: 5344
+MD5sum: 3e4b27df15c288a655537a122a273c8f
+SHA1: d840195cc7fc5427429987b7da7afefa2c55176e
+SHA256: b1714d4824bf210bc123b62699fcc1657556fbb04bcc5f6c513c205f5eb9dd27
+Section: Tweaks
+Homepage: http://mrbomst.github.io/
+Description: Allows Reordering of all the CC Modules and for Developers to add their own
+Author: iOS Creatix <ios.appcrack@gmail.com>
+Name: Silo
+
 Package: com.cydiavn.smartlpm
 Version: 1.1.0
 Architecture: iphoneos-arm
