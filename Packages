@@ -1,3 +1,26 @@
+Package: com.cydiavn.ahahah
+Version: 2.0-beta3
+Architecture: iphoneos-arm
+Maintainer: CydiaVN <ios.appcrack@gmail.com>
+Depends: firmware (>= 7.0), mobilesubstrate, preferenceloader
+Filename: ./debs/com.cydiavn.ahahah_2.0-beta3_iphoneos-arm.deb
+Size: 4706020
+MD5sum: 92dec69af2113bfc693fe1e926f6eb09
+SHA1: c243fd5a21999c02146c158b21c7215e3e42ae0e
+SHA256: d20dbd349e1c5ffe519a1382764f7ceba79eab3dc30a11baa15c7bcdc329a6be
+Section: Tweaks
+Description: Trigger a video alarm when someone tries to unlock your phone.
+ * Import videos from your Camera Roll.
+ * Supports third-party themes.
+ * Comes with three themes, including "Ah!Ah!Ah! you didn't say the magic word!" from Jurassic Park.
+ __
+ [ChangeLog Beta 3]
+ Added iOS 10 support (probably still buggy, let me know)
+ __
+Author: Sticktron
+Icon: file:///Library/PreferenceBundles/AhAhAhPrefs.bundle/Icon.png
+Name: Ah!Ah!Ah! 2.0 Beta 3 (iOS 7-10)
+
 Package: com.cydiavn.colormybattery
 Version: 1.0-5+debug
 Architecture: iphoneos-arm
@@ -87,12 +110,12 @@ Architecture: iphoneos-arm
 Maintainer: mrbomst <ios.appcrack@gmail.com>
 Filename: ./debs/com.cydiavn.texgyreadventer_1.0_iphoneos-arm.deb
 Size: 5090234
-MD5sum: 7cb0c2f12e2b73c8f9500f55e79ac25c
-SHA1: 0ca65cf7bdfed6422576541cb0b26190d5d99988
-SHA256: 9bdf7cec9d9ebb424392ddf1ae86e6d82071c8d77fb8c0205d2b1a5873cccc0f
+MD5sum: 4ea0b7ffc5902b842240720c88dbf100
+SHA1: b5be3dccf69072e21d22e5b3a4f21e250e399866
+SHA256: e019e9b07d83e010fbd8225d2067d49cd2bdb04eab45beb60ff43e65b1d34a28
 Section: Fonts
 Description: Font full TV on ios 10, 11.(depends install Anemone)
-Author: Mrbomst
+Author: Hatiato
 Depiction: https://mrbomst.github.io/depiction/texgyreadventer/index.html
 Icon: file:///Library/Application Support/texgyreadventer/Fonticon.png
 Name: Font Tex gyre adventer
