@@ -21,6 +21,30 @@ Author: Sticktron
 Icon: file:///Library/PreferenceBundles/AhAhAhPrefs.bundle/Icon.png
 Name: Ah!Ah!Ah! 2.0 Beta 3 (iOS 7-10)
 
+Package: com.cydiavn.anemone
+Version: 2.1.7-1
+Architecture: iphoneos-arm
+Maintainer: CydiaVN <ios.appcrack@gmail.com>
+Depends: firmware (>= 7.0), mobilesubstrate (>= 0.9.5000), com.rpetrich.rocketbootstrap, pincrush
+Conflicts: org.coolstar.themelib, anemoneteam.anemone, winterboard, com.codethemed.iconbundles, com.idd.iconomatic
+Replaces: org.coolstar.themelib, anemoneteam.anemone, org.coolstar.classicdock, winterboard, org.coolstar.classicbadges, com.codethemed.iconbundles, com.idd.iconomatic
+Provides: org.coolstar.themelib, anemoneteam.anemone, org.coolstar.classicdock, winterboard, org.coolstar.classicbadges, org.coolstar.customclock, com.codethemed.iconbundles, com.idd.iconomatic
+Filename: ./debs/com.cydiavn.anemone_2.1.7-1_iphoneos-arm.deb
+Size: 1875454
+MD5sum: f5ff48d85941471fa9257e72d2782e47
+SHA1: 8bd76e2468eba34c351b6c204c4ce87bd8899171
+SHA256: 9ac8e7a859ab9d5efe9d6246507b6822eebfd6e54e9cfef35ef0668bcda638bc
+Section: Tweaks
+Priority: optional
+Homepage: http://mrbomst.github.io
+Description: An awesome theme manager!
+Author: AnemoneTeam <anemonetheming@gmail.com>
+Depiction: https://mrbomst.github.io/depiction/Anemone/index.html
+Dev: anemonetheming
+Icon: file:///Applications/Anemone.app/icon.png
+Name: Anemone
+Sponsor: CydiaVN <http://mrbomst.github.io>
+
 Package: com.cydiavn.colormybattery
 Version: 1.0-5+debug
 Architecture: iphoneos-arm
