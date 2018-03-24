@@ -64,13 +64,13 @@ Name: ColorMyBattery
 
 Package: com.cydiavn.edgy
 Version: 1.0.0
-Architecture: iphoneos-arm, com.cydiavn.anemone
+Architecture: iphoneos-arm
 Maintainer: Mrbomst <ios.appcrack@gmail.com>
 Filename: ./debs/com.cydiavn.edgy_1.0.0_iphoneos-arm.deb
-Size: 5012934
-MD5sum: 0784f39ceeb4a258c03e09dc56199127
-SHA1: 54ba642ece219e80f9587e5059fec6639b39b4c7
-SHA256: 4501e33283204ea9ed3be2cffdaea36850eb4a4a73e7318101b4af53968fcd59
+Size: 5012926
+MD5sum: 27fa39b26cc1719b5284ebd3d8c7a270
+SHA1: 8500a974acba4e231a5ee078e2f2872772b60395
+SHA256: af0bbf36d1a5f48aea5796f76defe6767dc7f1b2b61cd0733a7f4a48ce9b69ec
 Section: Fonts
 Description: Font full TV on ios 10, 11.(depends install Anemone)
 Author: ifanvn
@@ -131,13 +131,13 @@ Name: EZSwipe
 
 Package: com.cydiavn.futura
 Version: 1.0.0
-Architecture: iphoneos-arm, com.cydiavn.anemone
+Architecture: iphoneos-arm
 Maintainer: Mrbomst <ios.appcrack@gmail.com>
 Filename: ./debs/com.cydiavn.futura_1.0.0_iphoneos-arm.deb
-Size: 5299800
-MD5sum: 505eece6fa6d2313c4bd0ed51465827f
-SHA1: f7e60dd0222b2c295de180028f364b0b8c99fdee
-SHA256: 55beb41e373738693e7be1c7947f3e3ef41a08bfb68e1de7bf016e69244524fc
+Size: 5299794
+MD5sum: d75ae3c9bba007e24dd3a8206d421106
+SHA1: aae776d4df744f7569fd1419f9dc302ae00570ba
+SHA256: 0c12295e935ec4b5fe73d1aba6736347f67458544f7d21166198b982479350fb
 Section: Fonts
 Description: Font full TV on ios 10, 11.(depends install Anemone)
 Author: Hatiato
@@ -196,13 +196,13 @@ Name: SpotClearOnClose
 
 Package: com.cydiavn.texgyreadventer
 Version: 1.0
-Architecture: iphoneos-arm, com.cydiavn.anemone
+Architecture: iphoneos-arm
 Maintainer: mrbomst <ios.appcrack@gmail.com>
 Filename: ./debs/com.cydiavn.texgyreadventer_1.0_iphoneos-arm.deb
-Size: 5090240
-MD5sum: f7b7f695d7e84a76ded0bb80584f15ac
-SHA1: e3c7b7b62fa5b66654c120e8f45689a8c5cf20d9
-SHA256: ff9c31de959221eb06fa8eee175f093dd8c5502ad3c36792d698f4938c293cd3
+Size: 5090234
+MD5sum: 47987b7839e23a902ad8fc495009bc56
+SHA1: d518a6d8591fb8d19cded2e670923f1c5c214ad6
+SHA256: 3a50ddc8512143aa7c9b03a9e9d9d1799e62ad7b1d1043bf926184d86e5532f2
 Section: Fonts
 Description: Font full TV on ios 10, 11.(depends install Anemone)
 Author: Hatiato
