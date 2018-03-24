@@ -38,6 +38,22 @@ Depiction: https://mrbomst.github.io/depiction/ColorMyBattery/index.html
 Icon: file:///Library/Application Support/ColorMyBattery/icon.png
 Name: ColorMyBattery
 
+Package: com.cydiavn.edgy
+Version: 1.0.0
+Architecture: iphoneos-arm, com.cydiavn.anemone
+Maintainer: Mrbomst <ios.appcrack@gmail.com>
+Filename: ./debs/com.cydiavn.edgy_1.0.0_iphoneos-arm.deb
+Size: 5012934
+MD5sum: 0784f39ceeb4a258c03e09dc56199127
+SHA1: 54ba642ece219e80f9587e5059fec6639b39b4c7
+SHA256: 4501e33283204ea9ed3be2cffdaea36850eb4a4a73e7318101b4af53968fcd59
+Section: Fonts
+Description: Font full TV on ios 10, 11.(depends install Anemone)
+Author: ifanvn
+Depiction: https://mrbomst.github.io/depiction/fontedgy/index.html
+Icon: file:///Library/Application Support/fontedgy/Fonticon.png
+Name: Font Edgy
+
 Package: com.cydiavn.ezcc
 Version: 0.0.4
 Architecture: iphoneos-arm
@@ -91,13 +107,13 @@ Name: EZSwipe
 
 Package: com.cydiavn.futura
 Version: 1.0.0
-Architecture: iphoneos-arm
+Architecture: iphoneos-arm, com.cydiavn.anemone
 Maintainer: Mrbomst <ios.appcrack@gmail.com>
 Filename: ./debs/com.cydiavn.futura_1.0.0_iphoneos-arm.deb
-Size: 5299794
-MD5sum: 3c607039980b228306f672b9e61848b3
-SHA1: 7a005791a702edb13c017ec2b528e3eaee12cf50
-SHA256: b7bd975a7392df597dfb63e6e352bf9da470d6399fcde3ba3ddc9b93bcbf4c5a
+Size: 5299800
+MD5sum: 505eece6fa6d2313c4bd0ed51465827f
+SHA1: f7e60dd0222b2c295de180028f364b0b8c99fdee
+SHA256: 55beb41e373738693e7be1c7947f3e3ef41a08bfb68e1de7bf016e69244524fc
 Section: Fonts
 Description: Font full TV on ios 10, 11.(depends install Anemone)
 Author: Hatiato
@@ -156,13 +172,13 @@ Name: SpotClearOnClose
 
 Package: com.cydiavn.texgyreadventer
 Version: 1.0
-Architecture: iphoneos-arm
+Architecture: iphoneos-arm, com.cydiavn.anemone
 Maintainer: mrbomst <ios.appcrack@gmail.com>
 Filename: ./debs/com.cydiavn.texgyreadventer_1.0_iphoneos-arm.deb
-Size: 5090234
-MD5sum: 4ea0b7ffc5902b842240720c88dbf100
-SHA1: b5be3dccf69072e21d22e5b3a4f21e250e399866
-SHA256: e019e9b07d83e010fbd8225d2067d49cd2bdb04eab45beb60ff43e65b1d34a28
+Size: 5090240
+MD5sum: f7b7f695d7e84a76ded0bb80584f15ac
+SHA1: e3c7b7b62fa5b66654c120e8f45689a8c5cf20d9
+SHA256: ff9c31de959221eb06fa8eee175f093dd8c5502ad3c36792d698f4938c293cd3
 Section: Fonts
 Description: Font full TV on ios 10, 11.(depends install Anemone)
 Author: Hatiato
@@ -225,11 +241,11 @@ Architecture: iphoneos-arm
 Maintainer: mrbomst <ios.appcrack@gmail.com>
 Depends: mobilesubstrate
 Filename: ./debs/com.mrbomst.letmeknow_1.2-1_iphoneos-arm.deb
-Size: 23646
-MD5sum: 782f919c61742b7c3c7cb402094c3534
-SHA1: 6fe99863ee678dd76b99358f703d9f6ffd378df9
-SHA256: 21b5a122750d2610705be5366e187db1014fe492e5943d8c1198ef6e5639897b
-Section: Tweaks (Supports ios 11)
+Size: 23636
+MD5sum: 3d17645656f7b2182e023dcab032b78c
+SHA1: 1e9e53eff33238fd0ce957d78aa000abc817263c
+SHA256: 47430fdad37d5027e93d21468dcf618343f7e25a72cba38483e52163a620312e
+Section: Tweaks
 Description: This tweak will let you know exactly when the call connects/disconnects so that you don't have to keep holding!
 Author: Kiran Patil
 Depiction: https://mrbomst.github.io/depiction/LetMeKnow/index.html
@@ -257,11 +273,11 @@ Architecture: iphoneos-arm
 Maintainer: Mrbomst <ios.appcrack@gmail.com>
 Depends: mobilesubstrate
 Filename: ./debs/com.mrbomst.spotcc_0.0.9-1+debug_iphoneos-arm.deb
-Size: 3478
-MD5sum: 7e8f6db938dd0a1fdbdaed2217c4e02b
-SHA1: 2aa18610f73764762582e796d8d3d26229be0d19
-SHA256: b96da94365f9c636973b813d2d21b430e72595b3ecc61a3c22ac089dbbc3722e
-Section: Tweaks (Supports ios 11)
+Size: 3464
+MD5sum: 3ab5f0e0ddd4adaccdb73004f055597c
+SHA1: 11b5c665282fb7c1db79a7072a9f764fca70bcea
+SHA256: 57226140c204e463f2ea938b70011e6445cb4155b13fe11fc6b30eac90a8a311
+Section: Tweaks
 Description: Tweak to bring up ControlCenter instead of Spotlight on the HomeScreen.
 Author: Kiran Patil
 Depiction: https://mrbomst.github.io/depiction/SpotCC/index.html
