@@ -1,3 +1,17 @@
+Package: com.cydiavn.CCModules
+Version: 1.6-2
+Architecture: iphoneos-arm
+Maintainer: CydiaVN <ios.appcrack@mail.com>
+Filename: ./debs/com.cydiavn.CCModules_1.6-2_iphoneos-arm.deb
+Size: 480428
+MD5sum: 3e2231f9daa58cb59c212b8e824cef11
+SHA1: f1dc1db24e8fba2ca3014f0f2c6f7c1d4563f1aa
+SHA256: 8ee1f3dd229b5c157437f97c14492b26b308d3d7344b39f55d29b9595b92035a
+Section: Tweaks
+Description: Apps like phone, messages, apple news, and safari now have a control center module. More apps will have one in the near future. Module Whitelist is required.
+Author: jailbreak365
+Name: CCModules
+
 Package: com.cydiavn.ahahah
 Version: 2.0-beta3
 Architecture: iphoneos-arm
@@ -144,6 +158,24 @@ Author: Hatiato
 Depiction: https://mrbomst.github.io/depiction/futura/index.html
 Icon: file:///Library/Application Support/futura/Fonticon.png
 Name: Font Futura
+
+Package: com.cydiavn.gamegem
+Version: 1.1
+Architecture: iphoneos-arm
+Maintainer: CydiaVN <bigboss@thebigboss.org>
+Depends: firmware (>= 6.0)
+Filename: ./debs/com.cydiavn.gamegem_1.1_iphoneos-arm.deb
+Size: 1528494
+MD5sum: 90fea7323f239a6419c8aeffe75fbab0
+SHA1: a49b2e282d1ef953b0615196d1df359adc501b6e
+SHA256: 5cf244cde95db3736473056554e61698805092418ecd004add9ae0b7702872f8
+Section: Utilities
+Homepage: http://mrbomst.github.io
+Description: Cheat engine for iOS. Change variable values.
+Author: Aidoo.TK
+Depiction: http://mrbomst.github.io/depiction/gamegem/index.html
+Icon: file:///Applications/MemSearch.app/AppIcon57x57.png
+Name: GameGem
 
 Package: com.cydiavn.silo
 Version: 1.0.0-4+debug
