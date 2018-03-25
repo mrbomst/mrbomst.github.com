@@ -1,12 +1,12 @@
 Package: com.cydiavn.CCModules
-Version: 1.6-2
+Version: 1.6-3
 Architecture: iphoneos-arm
-Maintainer: CydiaVN <ios.appcrack@mail.com>
-Filename: ./debs/com.cydiavn.CCModules_1.6-2_iphoneos-arm.deb
-Size: 480428
-MD5sum: 3e2231f9daa58cb59c212b8e824cef11
-SHA1: f1dc1db24e8fba2ca3014f0f2c6f7c1d4563f1aa
-SHA256: 8ee1f3dd229b5c157437f97c14492b26b308d3d7344b39f55d29b9595b92035a
+Maintainer: CydiaVn <ios.appcrack@gmail.com>
+Filename: ./debs/com.cydiavn.CCModules_1.6-3_iphoneos-arm.deb
+Size: 589706
+MD5sum: 3d3e36adda8397da2f1466a3377f1297
+SHA1: 148b4a8e63f01560a4de52704a2d60892a8ba588
+SHA256: e77e2137a62d22eb89f5bfb78f5b368c4397e170c5a9da2e71598e1163199f8e
 Section: Tweaks
 Description: Apps like phone, messages, apple news, and safari now have a control center module. More apps will have one in the near future. Module Whitelist is required.
 Author: jailbreak365
@@ -159,21 +159,22 @@ Depiction: https://mrbomst.github.io/depiction/futura/index.html
 Icon: file:///Library/Application Support/futura/Fonticon.png
 Name: Font Futura
 
-Package: com.cydiavn.gamegem
+Package: com.cydiavn.memsearch
 Version: 1.1
 Architecture: iphoneos-arm
-Maintainer: CydiaVN <bigboss@thebigboss.org>
+Maintainer: CydaiVN <ios.appcrack@gmail.com>
 Depends: firmware (>= 6.0)
-Filename: ./debs/com.cydiavn.gamegem_1.1_iphoneos-arm.deb
-Size: 1528494
-MD5sum: 90fea7323f239a6419c8aeffe75fbab0
-SHA1: a49b2e282d1ef953b0615196d1df359adc501b6e
-SHA256: 5cf244cde95db3736473056554e61698805092418ecd004add9ae0b7702872f8
+Filename: ./debs/com.cydiavn.memsearch_1.1_iphoneos-arm.deb
+Size: 2258252
+MD5sum: 5761315b23b438f976c37e4deea07d72
+SHA1: 11aa72a18cf09c681d4f835c9cef4d69cc5e4cfd
+SHA256: 608097a496e56d156eac29bf97f7a31f2e6640068de67e0c52be8f02bf124ea1
 Section: Utilities
 Homepage: http://mrbomst.github.io
 Description: Cheat engine for iOS. Change variable values.
+Tag: purpose::uikit, compatible::ios7, compatible::ios8, compatible::ios9
 Author: Aidoo.TK
-Depiction: http://mrbomst.github.io/depiction/gamegem/index.html
+Depiction: http://mrbomst.github.io/depiction/Gamegem/index.html
 Icon: file:///Applications/MemSearch.app/AppIcon57x57.png
 Name: GameGem
 
