@@ -159,6 +159,26 @@ Depiction: https://mrbomst.github.io/depiction/futura/index.html
 Icon: file:///Library/Application Support/futura/Fonticon.png
 Name: Font Futura
 
+Package: com.cydiavn.icleanerpro
+Version: 7.7.0
+Architecture: iphoneos-arm
+Maintainer: CydiaVN <ios.appcrack@gmail.com>
+Depends: firmware (>= 4.0), apt7, findutils, shell-cmds
+Conflicts: org.altervista.exilecom.icleaner
+Replaces: org.altervista.exilecom.icleaner
+Filename: ./debs/com.cydiavn.icleanerpro_7.7.0_iphoneos-arm.deb
+Size: 4635226
+MD5sum: 28b04e29d13f5616613bdcab5ce5e7dd
+SHA1: 4a5963871a163472c5f47e28ead92a4e97fccb73
+SHA256: ac3215cd9eb46e0c36027a752991c197c2f5ba93f0377c47aeb2b95c77702b4b
+Section: Utilities
+Homepage: http://mrbomst.github.io
+Description: The first real iOS system cleaner & optimizer
+Author: Ivano Bilenchi
+Depiction: http://mrbomst.github.io/depiction/icleanerpro/index.html
+Icon: file:///Applications/iCleaner.app/Icon.png
+Name: iCleaner Pro
+
 Package: com.cydiavn.memsearch
 Version: 1.1
 Architecture: iphoneos-arm
