@@ -72,7 +72,7 @@ Section: Fonts
 Description: Font full TV on ios 10, 11.(depends install Anemone)
 Author: hatiato
 Depiction: https://mrbomst.github.io/depiction/carriardream/index.html
-Icon: file:///Library/Application Support/fontedgy/Fonticon.png
+Icon: file:///Library/Application Support/fontcariardream/Fonticon.png
 Name: Font Cariar dream
 
 Package: com.cydiavn.colormybattery
@@ -410,4 +410,3 @@ Description: Hack vip app Spotify
 Author: Mrbomst
 Depiction: https://mrbomst.github.io/depiction/Spotify/index.html
 Name: SpotifyVip
-
