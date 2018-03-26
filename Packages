@@ -59,6 +59,22 @@ Icon: file:///Applications/Anemone.app/icon.png
 Name: Anemone
 Sponsor: CydiaVN <http://mrbomst.github.io>
 
+Package: com.cydiavn.cariardream
+Version: 1.0.0
+Architecture: iphoneos-arm
+Maintainer: CydiaVN <ios.appcrack@gmail.com>
+Filename: ./debs/com.cydiavn.cariardream_1.0.0_iphoneos-arm.deb
+Size: 4623584
+MD5sum: f575332a15696682d5bc5d0fee0af17e
+SHA1: 0b28195d6cad3e54383a67799b7f91636d0072fb
+SHA256: c1f0f6733003578fc16da487ba5f54e88770eca634ccd145a06d32d34ca32bb2
+Section: Fonts
+Description: Font full TV on ios 10, 11.(depends install Anemone)
+Author: hatiato
+Depiction: https://mrbomst.github.io/depiction/carriardream/index.html
+Icon: file:///Library/Application Support/fontedgy/Fonticon.png
+Name: Font Cariar dream
+
 Package: com.cydiavn.colormybattery
 Version: 1.0-5+debug
 Architecture: iphoneos-arm
