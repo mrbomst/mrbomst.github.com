@@ -176,6 +176,48 @@ Icon: file:///Library/Application Support/futura/Fonticon.png
 Name: Font Futura
 
 Package: com.cydiavn.icleanerpro
+Version: 7.6.2
+Architecture: iphoneos-arm
+Maintainer: CydiaVN <ios.appcrack@gmail.com>
+Pre-Depends: apt, findutils, shell-cmds
+Depends: firmware (>= 4.0)
+Conflicts: org.altervista.exilecom.icleaner
+Replaces: org.altervista.exilecom.icleaner
+Filename: ./debs/com.cydiavn.icleanerpro_7.6.2_iphoneos-arm.deb
+Size: 3485490
+MD5sum: e753cd373d407fcee3bf7de77b6a28b8
+SHA1: 16fbb713247217dca8584d4e106c44767931bf41
+SHA256: 36a4660482caa5da1282a5d607d6f75a5e585460fe78d665388d4671f6f4b84b
+Section: Utilities
+Homepage: http://mrbomst.github.io
+Description: The first real iOS system cleaner & optimizer
+Author: Ivano Bilenchi
+Depiction: http://mrbomst.github.io/depiction/icleanerpro/index.html
+Icon: file:///Applications/iCleaner.app/Icon.png
+Name: iCleaner Pro
+
+Package: com.cydiavn.icleanerpro
+Version: 7.6.4
+Architecture: iphoneos-arm
+Maintainer: CydiaVN <ios.appcrack@gmail.com>
+Pre-Depends: apt, findutils, shell-cmds
+Depends: firmware (>= 4.0)
+Conflicts: org.altervista.exilecom.icleaner
+Replaces: org.altervista.exilecom.icleaner
+Filename: ./debs/com.cydiavn.icleanerpro_7.6.4_iphoneos-arm.deb
+Size: 3570140
+MD5sum: 3f74474c31e6e8681cfc6d559e44c268
+SHA1: e79395b65ceccda4088c0320a5c392d07c67df2d
+SHA256: b4538dd574a7de471cecb8aefa5448f513d6e94b132cbfb27cc90f1b04c09d25
+Section: Utilities
+Homepage: http://mrbomst.github.io
+Description: The first real iOS system cleaner & optimizer
+Author: Ivano Bilenchi
+Depiction: http://mrbomst.github.io/depiction/icleanerpro/index.html
+Icon: file:///Applications/iCleaner.app/Icon.png
+Name: iCleaner Pro
+
+Package: com.cydiavn.icleanerpro
 Version: 7.7.0
 Architecture: iphoneos-arm
 Maintainer: CydiaVN <ios.appcrack@gmail.com>
@@ -187,6 +229,26 @@ Size: 4635226
 MD5sum: 28b04e29d13f5616613bdcab5ce5e7dd
 SHA1: 4a5963871a163472c5f47e28ead92a4e97fccb73
 SHA256: ac3215cd9eb46e0c36027a752991c197c2f5ba93f0377c47aeb2b95c77702b4b
+Section: Utilities
+Homepage: http://mrbomst.github.io
+Description: The first real iOS system cleaner & optimizer
+Author: Ivano Bilenchi
+Depiction: http://mrbomst.github.io/depiction/icleanerpro/index.html
+Icon: file:///Applications/iCleaner.app/Icon.png
+Name: iCleaner Pro
+
+Package: com.cydiavn.icleanerpro
+Version: 7.7.0~beta2
+Architecture: iphoneos-arm
+Maintainer: CydiaVN <ios.appcrack@gmail.com>
+Depends: firmware (>= 4.0), apt7, findutils, shell-cmds
+Conflicts: org.altervista.exilecom.icleaner
+Replaces: org.altervista.exilecom.icleaner
+Filename: ./debs/com.cydiavn.icleanerpro_7.7.0~beta2_iphoneos-arm.deb
+Size: 4679732
+MD5sum: b6af44def1ad6ca1d4306f18afca25d8
+SHA1: 78b4df693ae86b53fb2c00a8b3c3ca6015e9e5eb
+SHA256: 6ea4fa95cc5c5ad3fe3a1d80916182e79a766ed5f4adc78469aa1bd6c51a2fe2
 Section: Utilities
 Homepage: http://mrbomst.github.io
 Description: The first real iOS system cleaner & optimizer
