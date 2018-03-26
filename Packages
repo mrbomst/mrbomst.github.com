@@ -65,9 +65,9 @@ Architecture: iphoneos-arm
 Maintainer: CydiaVN <ios.appcrack@gmail.com>
 Filename: ./debs/com.cydiavn.cariardream_1.0.0_iphoneos-arm.deb
 Size: 4623584
-MD5sum: f575332a15696682d5bc5d0fee0af17e
-SHA1: 0b28195d6cad3e54383a67799b7f91636d0072fb
-SHA256: c1f0f6733003578fc16da487ba5f54e88770eca634ccd145a06d32d34ca32bb2
+MD5sum: 1f82bf45016ff59e2877591db2768ac9
+SHA1: f3ca5ac6db1156ca4f6078fe1c6ff3af0afbc12f
+SHA256: dc4498c446f7661b77e5d495745ea069248e17537d29b43b1f7f3720b21de240
 Section: Fonts
 Description: Font full TV on ios 10, 11.(depends install Anemone)
 Author: hatiato
@@ -410,3 +410,4 @@ Description: Hack vip app Spotify
 Author: Mrbomst
 Depiction: https://mrbomst.github.io/depiction/Spotify/index.html
 Name: SpotifyVip
+
