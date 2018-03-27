@@ -92,20 +92,6 @@ Depiction: https://mrbomst.github.io/depiction/ColorMyBattery/index.html
 Icon: file:///Library/Application Support/ColorMyBattery/icon.png
 Name: ColorMyBattery
 
-Package: com.cydiavn.crackicleanerpro
-Version: 1.0
-Architecture: iphoneos-arm
-Depends: sed, shell-cmds, system-cmds, uikittools (>= 1.1.4), coreutils-bin, coreutils
-Filename: ./debs/com.cydiavn.crackicleanerpro_1.0_iphoneos-arm.deb
-Size: 2428492
-MD5sum: 0ae22a2c067b612e8feb7acd896dd19b
-SHA1: e8cc287226a347c176bb62087e1a46a4ae76223e
-SHA256: b010ded4e287bf3f53a3ede31c4812884531fefd97d28ab86531795a8c87f0eb
-Section: Tweak (Hacks)
-Description: Cài phiên bản chính chủ trước khi cài crack, chỉ cần cài là crack đc không cần phải làm gì thêm
-Author: Mr bờm
-Name: Crack iCleaner Pro
-
 Package: com.cydiavn.edgy
 Version: 1.0.0
 Architecture: iphoneos-arm
@@ -505,4 +491,18 @@ Description: Hack vip app Spotify
 Author: Mrbomst
 Depiction: https://mrbomst.github.io/depiction/Spotify/index.html
 Name: SpotifyVip
+
+Package: com.yourepo.mrbom.crackicleanerpro
+Version: 1.0
+Architecture: iphoneos-arm
+Depends: sed, shell-cmds, system-cmds, uikittools (>= 1.1.4), coreutils-bin, coreutils
+Filename: ./debs/com.cydiavn.crackicleanerpro_1.0_iphoneos-arm.deb
+Size: 3484346
+MD5sum: 6f98ef69881d9ea622805e8f1ce1ca38
+SHA1: 6686692aa5d7304ff76e5132668bedc1a2257c02
+SHA256: 7cdb0360ad6b47f2865b50f8a0fabe4e12652b2ca201430607209507c60f3743
+Section: Utilities
+Description: Cài phiên bản chính chủ trước khi cài crack, chỉ cần cài là crack đc không cần phải làm gì thêm
+Author: CydiaVN <ios.appcrack@gmail.com>
+Name: Crack iCleaner Pro
 
