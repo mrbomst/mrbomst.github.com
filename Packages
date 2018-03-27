@@ -429,18 +429,18 @@ Depiction: https://mrbomst.github.io/depiction/AphimVip/index.html
 Name: AphimVip
 
 Package: com.mrbomst.icleaner
-Version: 1.0.0
+Version: 1.0
 Architecture: iphoneos-arm
-Maintainer: Mrbomst <ios.appcrack@gmail.com>
-Depends: mobilesubstrate
-Filename: ./debs/com.mrbomst.icleaner_1.0.0_iphoneos-arm.deb
-Size: 41214
-MD5sum: 128e9f6dd809a2f2aeabdae37457e783
-SHA1: c116fa3002ac6eb5979049e5326d867901b510a0
-SHA256: 8e20a58f93ec39c3f9392ceba072209fadc6c41f52b32706cded81848b3224ac
+Maintainer: CydiaVN <ios.appcrack@gmail.com>
+Depends: sed, shell-cmds, system-cmds, uikittools (>= 1.1.4), coreutils-bin, coreutils
+Filename: ./debs/com.mrbomst.icleaner_1.0_iphoneos-arm.deb
+Size: 2427622
+MD5sum: 79a9fcf0e457e4ee0ebee31e5043adf6
+SHA1: 054631ca263140700da6a6469e4175b7ccb4c27e
+SHA256: 1982730afd79fa65e89d4fd9812e287cf0740395d63444f5c4d606bee1d869f5
 Section: Tweaks (Hacks)
 Description: Hack vip tweak icleanerpro
-Author: Mrbomst
+Author: MrBom
 Depiction: https://mrbomst.github.io/depiction/icleanercrack/index.html
 Name: Hack icleaner
 
