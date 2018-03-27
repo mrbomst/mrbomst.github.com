@@ -492,17 +492,17 @@ Author: Mrbomst
 Depiction: https://mrbomst.github.io/depiction/Spotify/index.html
 Name: SpotifyVip
 
-Package: com.yourepo.mrbom.crackicleanerpro
+Package: com.yourepo.cydiavn.crackicleanerpro
 Version: 1.0
 Architecture: iphoneos-arm
 Depends: sed, shell-cmds, system-cmds, uikittools (>= 1.1.4), coreutils-bin, coreutils
-Filename: ./debs/com.cydiavn.crackicleanerpro_1.0_iphoneos-arm.deb
-Size: 3484346
-MD5sum: 6f98ef69881d9ea622805e8f1ce1ca38
-SHA1: 6686692aa5d7304ff76e5132668bedc1a2257c02
-SHA256: 7cdb0360ad6b47f2865b50f8a0fabe4e12652b2ca201430607209507c60f3743
+Filename: ./debs/com.yourepo.cydiavn.crackicleanerpro_1.0_iphoneos-arm.deb
+Size: 3484322
+MD5sum: af7304f432a56579d0bde57c612ad89c
+SHA1: 698cfe0bc454ec672fc2a9782e4141cda82f978e
+SHA256: ddafce7330d5e411028969c8afa7a377a549fe299806338914a90d62a18e5f96
 Section: Utilities
-Description: Cài phiên bản chính chủ trước khi cài crack, chỉ cần cài là crack đc không cần phải làm gì thêm
+Description: cài icleaner pro trước rồi cài tweak crack này để full chức năng.
 Author: CydiaVN <ios.appcrack@gmail.com>
 Depiction: https://mrbomst.github.io/depiction/icleanercrack/index.html
 Name: Crack iCleaner Pro
