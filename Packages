@@ -125,6 +125,22 @@ Author: M4cs, Simalary, Chilaxan, MidnightChips, Clarke1234, 5px <ios.appcrack@g
 Depiction: http://mrbomst.github.io/depiction/EZCC/index.html
 Name: EzCC
 
+Package: com.cydiavn.ezcc
+Version: 1.0
+Architecture: iphoneos-arm
+Maintainer: CydiaVN (ios.appcrack@gmail.com)
+Depends: mobilesubstrate, com.cydiavn.silo
+Filename: ./debs/com.cydiavn.ezcc_1.0_iphoneos-arm.deb
+Size: 102208
+MD5sum: 9b73c1452690870b6e491168c6cb62cc
+SHA1: 3564d9170c3398ee0cf55e549588e6ead6dfc5e5
+SHA256: c67c4b90f9b4a5e71208b0355a81b08b8cbe543b2f9d93c13dcf31604f6d4308
+Section: Tweaks
+Description: EzCC Module Tweak for iOS 11! Allows you to launch apps and activate system commands from the Control Center
+Author: Auxilium Team
+Depiction: http://mrbomst.github.io/depiction/EZCC/index.html
+Name: EzCC
+
 Package: com.cydiavn.ezccx
 Version: 1.0.1
 Architecture: iphoneos-arm
@@ -176,6 +192,46 @@ Icon: file:///Library/Application Support/futura/Fonticon.png
 Name: Font Futura
 
 Package: com.cydiavn.icleanerpro
+Version: 7.7.0
+Architecture: iphoneos-arm
+Maintainer: CydiaVN <ios.appcrack@gmail.com>
+Depends: firmware (>= 4.0), apt7, findutils, shell-cmds
+Conflicts: org.altervista.exilecom.icleaner
+Replaces: org.altervista.exilecom.icleaner
+Filename: ./debs/com.cydiavn.icleanerpro_7.7.0_iphoneos-arm.deb
+Size: 4635226
+MD5sum: 28b04e29d13f5616613bdcab5ce5e7dd
+SHA1: 4a5963871a163472c5f47e28ead92a4e97fccb73
+SHA256: ac3215cd9eb46e0c36027a752991c197c2f5ba93f0377c47aeb2b95c77702b4b
+Section: Utilities
+Homepage: http://mrbomst.github.io
+Description: The first real iOS system cleaner & optimizer
+Author: Ivano Bilenchi
+Depiction: http://mrbomst.github.io/depiction/icleanerpro/index.html
+Icon: file:///Applications/iCleaner.app/Icon.png
+Name: iCleaner Pro
+
+Package: com.cydiavn.icleanerpro
+Version: 7.7.0~beta2
+Architecture: iphoneos-arm
+Maintainer: CydiaVN <ios.appcrack@gmail.com>
+Depends: firmware (>= 4.0), apt7, findutils, shell-cmds
+Conflicts: org.altervista.exilecom.icleaner
+Replaces: org.altervista.exilecom.icleaner
+Filename: ./debs/com.cydiavn.icleanerpro_7.7.0~beta2_iphoneos-arm.deb
+Size: 4679732
+MD5sum: b6af44def1ad6ca1d4306f18afca25d8
+SHA1: 78b4df693ae86b53fb2c00a8b3c3ca6015e9e5eb
+SHA256: 6ea4fa95cc5c5ad3fe3a1d80916182e79a766ed5f4adc78469aa1bd6c51a2fe2
+Section: Utilities
+Homepage: http://mrbomst.github.io
+Description: The first real iOS system cleaner & optimizer
+Author: Ivano Bilenchi
+Depiction: http://mrbomst.github.io/depiction/icleanerpro/index.html
+Icon: file:///Applications/iCleaner.app/Icon.png
+Name: iCleaner Pro
+
+Package: com.cydiavn.icleanerpro
 Version: 7.6.2
 Architecture: iphoneos-arm
 Maintainer: CydiaVN <ios.appcrack@gmail.com>
@@ -217,45 +273,24 @@ Depiction: http://mrbomst.github.io/depiction/icleanerpro/index.html
 Icon: file:///Applications/iCleaner.app/Icon.png
 Name: iCleaner Pro
 
-Package: com.cydiavn.icleanerpro
-Version: 7.7.0
+Package: com.cydiavn.memsearch
+Version: 1.4
 Architecture: iphoneos-arm
 Maintainer: CydiaVN <ios.appcrack@gmail.com>
-Depends: firmware (>= 4.0), apt7, findutils, shell-cmds
-Conflicts: org.altervista.exilecom.icleaner
-Replaces: org.altervista.exilecom.icleaner
-Filename: ./debs/com.cydiavn.icleanerpro_7.7.0_iphoneos-arm.deb
-Size: 4635226
-MD5sum: 28b04e29d13f5616613bdcab5ce5e7dd
-SHA1: 4a5963871a163472c5f47e28ead92a4e97fccb73
-SHA256: ac3215cd9eb46e0c36027a752991c197c2f5ba93f0377c47aeb2b95c77702b4b
+Depends: firmware (>= 8.0)
+Filename: ./debs/com.cydiavn.memsearch_1.4_iphoneos-arm.deb
+Size: 2867722
+MD5sum: a2fdf9ffb5fecba2b9a7c5b05037c929
+SHA1: af33f1613ff9ef42736c8fb26ee717cc91371457
+SHA256: 17515646eced8a41a5f6fa67b92f4dec7393ce4f33121e086bf6b4073944a25d
 Section: Utilities
 Homepage: http://mrbomst.github.io
-Description: The first real iOS system cleaner & optimizer
-Author: Ivano Bilenchi
-Depiction: http://mrbomst.github.io/depiction/icleanerpro/index.html
-Icon: file:///Applications/iCleaner.app/Icon.png
-Name: iCleaner Pro
-
-Package: com.cydiavn.icleanerpro
-Version: 7.7.0~beta2
-Architecture: iphoneos-arm
-Maintainer: CydiaVN <ios.appcrack@gmail.com>
-Depends: firmware (>= 4.0), apt7, findutils, shell-cmds
-Conflicts: org.altervista.exilecom.icleaner
-Replaces: org.altervista.exilecom.icleaner
-Filename: ./debs/com.cydiavn.icleanerpro_7.7.0~beta2_iphoneos-arm.deb
-Size: 4679732
-MD5sum: b6af44def1ad6ca1d4306f18afca25d8
-SHA1: 78b4df693ae86b53fb2c00a8b3c3ca6015e9e5eb
-SHA256: 6ea4fa95cc5c5ad3fe3a1d80916182e79a766ed5f4adc78469aa1bd6c51a2fe2
-Section: Utilities
-Homepage: http://mrbomst.github.io
-Description: The first real iOS system cleaner & optimizer
-Author: Ivano Bilenchi
-Depiction: http://mrbomst.github.io/depiction/icleanerpro/index.html
-Icon: file:///Applications/iCleaner.app/Icon.png
-Name: iCleaner Pro
+Description: Memory debug tool for iOS. Support iPhone and iPad above iOS 8.x
+Tag: purpose::uikit, compatible::ios8, compatible::ios9, compatible::ios10, compatible::ios11
+Author: Aidoo.TK
+Depiction: http://mrbomst.github.io/depiction/Gamegem/index.html
+Icon: file:///Applications/GameGemiOS.app/AppIcon29x29@2x.png
+Name: GameGem
 
 Package: com.cydiavn.memsearch
 Version: 1.1
