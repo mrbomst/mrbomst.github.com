@@ -191,6 +191,48 @@ Depiction: https://mrbomst.github.io/depiction/futura/index.html
 Icon: file:///Library/Application Support/futura/Fonticon.png
 Name: Font Futura
 
+Package: com.cydiavn.hidedots11
+Version: 0.0.1-1
+Architecture: iphoneos-arm
+Maintainer: CydiaVN <ios.appcrack@gmail.com>
+Depends: mobilesubstrate, firmware (>= 11.0)
+Filename: ./debs/com.cydiavn.hidedots11_0.0.1-1_iphoneos-arm.deb
+Size: 3290
+MD5sum: 20869378826bc402e7e5e0813cbe6ce3
+SHA1: bebeed2e162f6afc380015d294acf821fb06f20e
+SHA256: 197c81a4c7e5b955472a910efa9a7b7f4ce9f79ca25734d58639dfed41bd4466
+Section: Tweaks
+Priority: optional
+Homepage: http://mrbomst.github.io
+Description: Hide Ugly HomeScreen And LockScreen Dots on iOS 11
+Tag: purpose::extension, compatible::ios11
+Author: 1di4r
+Depiction: http://mrbomst.github.io/depiction/hidedots11/index.html
+Name: HideDots11
+Sponsor: CydiaVN <ios.appcrack@gmail.com>
+
+Package: com.cydiavn.homebarsizer
+Version: 1.0-5
+Architecture: iphoneos-arm
+Maintainer: CydiaVN <ios.appcrack@gmail.com
+Depends: mobilesubstrate, firmware (>= 11.0)
+Filename: ./debs/com.cydiavn.homebarsizer_1.0-5_iphoneos-arm.deb
+Size: 21768
+MD5sum: 11e6b80a310b5dc92060a00c5019bf48
+SHA1: 0a616eb8cea958a121e92cb3d8116dca528bac41
+SHA256: 2fb0677bfd91bb42809424a61bc0c140a96c906beaedce03ae1091740eff94d7
+Section: Tweaks
+Priority: optional
+Homepage: http://mrbomst.github.io
+Description: Resize that HomeBar!
+Tag: purpose::extension, compatible::ios11
+Author: Kiran Patil
+Depiction: http://mrbomst.github.io/depiction/homebarsizer/index.html
+Dev: imkpatil
+Icon: file:///Library/PreferenceBundles/HomeBarSizer.bundle/icon@2x.png
+Name: HomeBarSizer
+Sponsor: CydiaVN <ios.appcrack@gmail.com>
+
 Package: com.cydiavn.icleanerpro
 Version: 7.6.2
 Architecture: iphoneos-arm
@@ -504,5 +546,5 @@ SHA256: ddafce7330d5e411028969c8afa7a377a549fe299806338914a90d62a18e5f96
 Section: Utilities
 Description: cài icleaner pro trước rồi cài tweak crack này để full chức năng.
 Author: CydiaVN <ios.appcrack@gmail.com>
-Depiction: https://mrbomst.github.io/depiction/icleanercrack/index.html
 Name: Crack iCleaner Pro
+
