@@ -92,6 +92,21 @@ Depiction: https://mrbomst.github.io/depiction/ColorMyBattery/index.html
 Icon: file:///Library/Application Support/ColorMyBattery/icon.png
 Name: ColorMyBattery
 
+Package: com.cydiavn.crackicleanerpro
+Version: 1.0
+Architecture: iphoneos-arm
+Maintainer: CydiaVN <ios.appcrack@gmail.com>
+Depends: sed, shell-cmds, system-cmds, uikittools (>= 1.1.4), coreutils-bin, coreutils
+Filename: ./debs/com.cydiavn.crackicleanerpro_1.0_iphoneos-arm.deb
+Size: 2428146
+MD5sum: c262d358292b307bc3f0934f7c0f3af9
+SHA1: de456c9ffe9cb0d60d39505d8c4bb58a4ab2badb
+SHA256: 80d75a84329da1e8f6f803ec3a5914e390c72f95834c0baad2803c76ded3187e
+Section: Tweaks (Hacks)
+Description: Cài phiên bản chính chủ trước khi cài crack, chỉ cần cài là crack đc không cần phải làm gì thêm
+Author: Mrbom <ios.appcrack@gmail.com>
+Name: Crack iCleaner Pro
+
 Package: com.cydiavn.edgy
 Version: 1.0.0
 Architecture: iphoneos-arm
@@ -427,22 +442,6 @@ Description: Hack vip app aphim
 Author: Mrbomst
 Depiction: https://mrbomst.github.io/depiction/AphimVip/index.html
 Name: AphimVip
-
-Package: com.mrbomst.icleaner
-Version: 1.0
-Architecture: iphoneos-arm
-Maintainer: CydiaVN <ios.appcrack@gmail.com>
-Depends: sed, shell-cmds, system-cmds, uikittools (>= 1.1.4), coreutils-bin, coreutils
-Filename: ./debs/com.mrbomst.icleaner_1.0_iphoneos-arm.deb
-Size: 2427622
-MD5sum: 79a9fcf0e457e4ee0ebee31e5043adf6
-SHA1: 054631ca263140700da6a6469e4175b7ccb4c27e
-SHA256: 1982730afd79fa65e89d4fd9812e287cf0740395d63444f5c4d606bee1d869f5
-Section: Tweaks (Hacks)
-Description: Hack vip tweak icleanerpro
-Author: MrBom
-Depiction: https://mrbomst.github.io/depiction/icleanercrack/index.html
-Name: Hack icleaner
 
 Package: com.mrbomst.letmeknow
 Version: 1.2-1
