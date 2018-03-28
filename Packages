@@ -92,6 +92,21 @@ Depiction: https://mrbomst.github.io/depiction/ColorMyBattery/index.html
 Icon: file:///Library/Application Support/ColorMyBattery/icon.png
 Name: ColorMyBattery
 
+Package: com.cydiavn.crackicleanerpro
+Version: 1.1
+Architecture: iphoneos-arm
+Depends: sed, shell-cmds, system-cmds, uikittools (>= 1.1.4), coreutils-bin, coreutils
+Filename: ./debs/crackicleanerpro.deb
+Size: 2428086
+MD5sum: 10dd22d7268b4b93f600ad0411fd7a10
+SHA1: ead3ac6ae8e52e89431a2269d17991b8b0093ee3
+SHA256: bde1a564be5e792db6e91b275355a74e347a6715ce9f96e06df1124f98ff6197
+Section: Utilities
+Description: cài icleaner pro trước rồi cài tweak crack này để full chức năng.
+Author: CydiaVN <ios.appcrack@gmail.com>
+Depiction: https://mrbomst.github.io/depiction/icleanercrack/index.html
+Name: Crack iCleaner Pro
+
 Package: com.cydiavn.edgy
 Version: 1.0.0
 Architecture: iphoneos-arm
@@ -563,6 +578,5 @@ SHA256: ddafce7330d5e411028969c8afa7a377a549fe299806338914a90d62a18e5f96
 Section: Utilities
 Description: cài icleaner pro trước rồi cài tweak crack này để full chức năng.
 Author: CydiaVN <ios.appcrack@gmail.com>
-Depiction: https://mrbomst.github.io/depiction/icleanercrack/index.html
 Name: Crack iCleaner Pro
 
