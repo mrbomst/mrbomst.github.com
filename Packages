@@ -1,3 +1,27 @@
+Package: com.anemonetheming.anemone
+Version: 2.1.7-1
+Architecture: iphoneos-arm
+Maintainer: CydiaVN <ios.appcrack@gmail.com>
+Depends: firmware (>= 7.0), mobilesubstrate (>= 0.9.5000), com.rpetrich.rocketbootstrap, pincrush
+Conflicts: org.coolstar.themelib, anemoneteam.anemone, winterboard, com.codethemed.iconbundles, com.idd.iconomatic
+Replaces: org.coolstar.themelib, anemoneteam.anemone, org.coolstar.classicdock, winterboard, org.coolstar.classicbadges, com.codethemed.iconbundles, com.idd.iconomatic
+Provides: org.coolstar.themelib, anemoneteam.anemone, org.coolstar.classicdock, winterboard, org.coolstar.classicbadges, org.coolstar.customclock, com.codethemed.iconbundles, com.idd.iconomatic
+Filename: ./debs/com.anemonetheming.anemone_2.1.7-1_iphoneos-arm.deb
+Size: 1875444
+MD5sum: 31da74d962ecb672ba468832507aa27a
+SHA1: ac4aba007c3a0690ab695d324a198641fe4b7280
+SHA256: b5caef0a1be32bc974b60e767bc68ece641381bfbd55185e4c89ed4cb7799968
+Section: Tweaks
+Priority: optional
+Homepage: http://mrbomst.github.io
+Description: An awesome theme manager!
+Author: AnemoneTeam
+Depiction: https://mrbomst.github.io/depiction/Anemone/index.html
+Dev: anemonetheming
+Icon: file:///Applications/Anemone.app/icon.png
+Name: Anemone
+Sponsor: CydiaVN <http://mrbomst.github.io>
+
 Package: com.cydiavn.CCModules
 Version: 1.6-3
 Architecture: iphoneos-arm
@@ -34,30 +58,6 @@ Description: Trigger a video alarm when someone tries to unlock your phone.
 Author: Sticktron
 Icon: file:///Library/PreferenceBundles/AhAhAhPrefs.bundle/Icon.png
 Name: Ah!Ah!Ah! 2.0 Beta 3 (iOS 7-10)
-
-Package: com.cydiavn.anemone
-Version: 2.1.7-1
-Architecture: iphoneos-arm
-Maintainer: CydiaVN <ios.appcrack@gmail.com>
-Depends: firmware (>= 7.0), mobilesubstrate (>= 0.9.5000), com.rpetrich.rocketbootstrap, pincrush
-Conflicts: org.coolstar.themelib, anemoneteam.anemone, winterboard, com.codethemed.iconbundles, com.idd.iconomatic
-Replaces: org.coolstar.themelib, anemoneteam.anemone, org.coolstar.classicdock, winterboard, org.coolstar.classicbadges, com.codethemed.iconbundles, com.idd.iconomatic
-Provides: org.coolstar.themelib, anemoneteam.anemone, org.coolstar.classicdock, winterboard, org.coolstar.classicbadges, org.coolstar.customclock, com.codethemed.iconbundles, com.idd.iconomatic
-Filename: ./debs/com.cydiavn.anemone_2.1.7-1_iphoneos-arm.deb
-Size: 1875454
-MD5sum: f5ff48d85941471fa9257e72d2782e47
-SHA1: 8bd76e2468eba34c351b6c204c4ce87bd8899171
-SHA256: 9ac8e7a859ab9d5efe9d6246507b6822eebfd6e54e9cfef35ef0668bcda638bc
-Section: Tweaks
-Priority: optional
-Homepage: http://mrbomst.github.io
-Description: An awesome theme manager!
-Author: AnemoneTeam <anemonetheming@gmail.com>
-Depiction: https://mrbomst.github.io/depiction/Anemone/index.html
-Dev: anemonetheming
-Icon: file:///Applications/Anemone.app/icon.png
-Name: Anemone
-Sponsor: CydiaVN <http://mrbomst.github.io>
 
 Package: com.cydiavn.cariardream
 Version: 1.0.0
@@ -135,6 +135,23 @@ Size: 102208
 MD5sum: 9b73c1452690870b6e491168c6cb62cc
 SHA1: 3564d9170c3398ee0cf55e549588e6ead6dfc5e5
 SHA256: c67c4b90f9b4a5e71208b0355a81b08b8cbe543b2f9d93c13dcf31604f6d4308
+Section: Tweaks
+Description: EzCC Module Tweak for iOS 11! Allows you to launch apps and activate system commands from the Control Center
+Author: Auxilium Team
+Depiction: http://mrbomst.github.io/depiction/EZCC/index.html
+Name: EzCC
+
+Package: com.cydiavn.ezcc
+Version: 1.1-4
+Architecture: iphoneos-arm
+Maintainer: CydiaVN (ios.appcrack@gmail.com)
+Depends: mobilesubstrate, com.cydiavn.silo
+Conflicts: com.m4cs.ezccbeta
+Filename: ./debs/com.cydiavn.ezcc_1.1-4_iphoneos-arm.deb
+Size: 121898
+MD5sum: e538332334a85ffc5d3814bc88190135
+SHA1: a2c5b813f4106b1afa9ab269c1adc05dad8aeabb
+SHA256: 55c3fdef573c5d57b8def9e20e7f23d252d1a5b06b760be86d0dd0f2cc2656ba
 Section: Tweaks
 Description: EzCC Module Tweak for iOS 11! Allows you to launch apps and activate system commands from the Control Center
 Author: Auxilium Team
@@ -546,5 +563,5 @@ SHA256: ddafce7330d5e411028969c8afa7a377a549fe299806338914a90d62a18e5f96
 Section: Utilities
 Description: cài icleaner pro trước rồi cài tweak crack này để full chức năng.
 Author: CydiaVN <ios.appcrack@gmail.com>
-Depiction: https://mrbomst.github.io/depiction/icleanercrack/index.html
 Name: Crack iCleaner Pro
+
