@@ -22,6 +22,30 @@ Icon: file:///Applications/Anemone.app/icon.png
 Name: Anemone
 Sponsor: CydiaVN <http://mrbomst.github.io>
 
+Package: com.cydiavn.anemone
+Version: 2.1.7-1
+Architecture: iphoneos-arm
+Maintainer: CydiaVN <ios.appcrack@gmail.com>
+Depends: firmware (>= 7.0), mobilesubstrate (>= 0.9.5000), com.rpetrich.rocketbootstrap, pincrush
+Conflicts: org.coolstar.themelib, anemoneteam.anemone, winterboard, com.codethemed.iconbundles, com.idd.iconomatic
+Replaces: org.coolstar.themelib, anemoneteam.anemone, org.coolstar.classicdock, winterboard, org.coolstar.classicbadges, com.codethemed.iconbundles, com.idd.iconomatic
+Provides: org.coolstar.themelib, anemoneteam.anemone, org.coolstar.classicdock, winterboard, org.coolstar.classicbadges, org.coolstar.customclock, com.codethemed.iconbundles, com.idd.iconomatic
+Filename: ./anemone_2.1.7-1.deb
+Size: 1878030
+MD5sum: 6b0bb7ea5596fa603af3f5589fc654ae
+SHA1: 1af0128cbb39fc799e76bd62f3b51893a7874700
+SHA256: c5d64e5d3411c76264b17a63ffbdbad98709e557c4f3c1efe16f2959e3eee49e
+Section: Tweaks
+Priority: optional
+Homepage: http://mrbomst.github.io
+Description: An awesome theme manager!
+Author: AnemoneTeam <anemonetheming@gmail.com>
+Depiction: https://mrbomst.github.io/depiction/Anemone/index.html
+Dev: anemonetheming
+Icon: file:///Applications/Anemone.app/icon.png
+Name: Anemone
+Sponsor: CydiaVN <http://mrbomst.github.io>
+
 Package: com.cydiavn.CCModules
 Version: 1.6-3
 Architecture: iphoneos-arm
