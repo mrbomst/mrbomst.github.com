@@ -584,11 +584,11 @@ Author: Mrbomst
 Depiction: https://mrbomst.github.io/depiction/Spotify/index.html
 Name: SpotifyVip
 
-Package: com.yourepo.cydiavn.crackicleanerpro
+Package: 
 Version: 1.0
 Architecture: iphoneos-arm
 Depends: sed, shell-cmds, system-cmds, uikittools (>= 1.1.4), coreutils-bin, coreutils
-Filename: ./debs/com.yourepo.cydiavn.crackicleanerpro_1.0_iphoneos-arm.deb
+Filename: 
 Size: 3484322
 MD5sum: af7304f432a56579d0bde57c612ad89c
 SHA1: 698cfe0bc454ec672fc2a9782e4141cda82f978e
