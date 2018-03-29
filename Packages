@@ -92,6 +92,23 @@ Depiction: https://mrbomst.github.io/depiction/ColorMyBattery/index.html
 Icon: file:///Library/Application Support/ColorMyBattery/icon.png
 Name: ColorMyBattery
 
+Package: com.cydiavn.datameter
+Version: 1.4-3
+Architecture: iphoneos-arm
+Maintainer: CydiaVN <ios.appcrack@gmail.com>
+Depends: firmware (>= 7.0), mobilesubstrate (>= 0.9.5000), preferenceloader (>= 2.2.2)
+Filename: ./debs/datameter_1.4-3.deb
+Size: 385978
+MD5sum: 50dd4b7423edf0f0a858fb4ba713a011
+SHA1: 777dc9145937d6b7d2d4fc2358b6fcf19071ba71
+SHA256: a5e76adb717106a44a6d94f36075192841e7fc9a4cf2a2152c1688e1bb953c52
+Section: Addons
+Description: DataMeter for iOS 7-10 Notification Center
+Author: Minuit
+Depiction: http://mrbomst.github.io/depiction/datameter/index.html
+Icon: file:///Library/PreferenceBundles/DataMeterSettings.bundle/icon@2x.png
+Name: DataMeter
+
 Package: com.cydiavn.edgy
 Version: 1.0.0
 Architecture: iphoneos-arm
@@ -107,6 +124,23 @@ Author: ifanvn
 Depiction: https://mrbomst.github.io/depiction/fontedgy/index.html
 Icon: file:///Library/Application Support/fontedgy/Fonticon.png
 Name: Font Edgy
+
+Package: com.cydiavn.ezcc
+Version: 1.1-4
+Architecture: iphoneos-arm
+Maintainer: CydiaVN (ios.appcrack@gmail.com)
+Depends: mobilesubstrate, com.cydiavn.silo
+Conflicts: com.m4cs.ezccbeta
+Filename: ./debs/com.cydiavn.ezcc_1.1-4_iphoneos-arm.deb
+Size: 121898
+MD5sum: e538332334a85ffc5d3814bc88190135
+SHA1: a2c5b813f4106b1afa9ab269c1adc05dad8aeabb
+SHA256: 55c3fdef573c5d57b8def9e20e7f23d252d1a5b06b760be86d0dd0f2cc2656ba
+Section: Tweaks
+Description: EzCC Module Tweak for iOS 11! Allows you to launch apps and activate system commands from the Control Center
+Author: Auxilium Team
+Depiction: http://mrbomst.github.io/depiction/EZCC/index.html
+Name: EzCC
 
 Package: com.cydiavn.ezcc
 Version: 0.0.4
@@ -135,23 +169,6 @@ Size: 102208
 MD5sum: 9b73c1452690870b6e491168c6cb62cc
 SHA1: 3564d9170c3398ee0cf55e549588e6ead6dfc5e5
 SHA256: c67c4b90f9b4a5e71208b0355a81b08b8cbe543b2f9d93c13dcf31604f6d4308
-Section: Tweaks
-Description: EzCC Module Tweak for iOS 11! Allows you to launch apps and activate system commands from the Control Center
-Author: Auxilium Team
-Depiction: http://mrbomst.github.io/depiction/EZCC/index.html
-Name: EzCC
-
-Package: com.cydiavn.ezcc
-Version: 1.1-4
-Architecture: iphoneos-arm
-Maintainer: CydiaVN (ios.appcrack@gmail.com)
-Depends: mobilesubstrate, com.cydiavn.silo
-Conflicts: com.m4cs.ezccbeta
-Filename: ./debs/com.cydiavn.ezcc_1.1-4_iphoneos-arm.deb
-Size: 121898
-MD5sum: e538332334a85ffc5d3814bc88190135
-SHA1: a2c5b813f4106b1afa9ab269c1adc05dad8aeabb
-SHA256: 55c3fdef573c5d57b8def9e20e7f23d252d1a5b06b760be86d0dd0f2cc2656ba
 Section: Tweaks
 Description: EzCC Module Tweak for iOS 11! Allows you to launch apps and activate system commands from the Control Center
 Author: Auxilium Team
@@ -251,27 +268,6 @@ Name: HomeBarSizer
 Sponsor: CydiaVN <ios.appcrack@gmail.com>
 
 Package: com.cydiavn.icleanerpro
-Version: 7.6.2
-Architecture: iphoneos-arm
-Maintainer: CydiaVN <ios.appcrack@gmail.com>
-Pre-Depends: apt, findutils, shell-cmds
-Depends: firmware (>= 4.0)
-Conflicts: org.altervista.exilecom.icleaner
-Replaces: org.altervista.exilecom.icleaner
-Filename: ./debs/com.cydiavn.icleanerpro_7.6.2_iphoneos-arm.deb
-Size: 3485490
-MD5sum: e753cd373d407fcee3bf7de77b6a28b8
-SHA1: 16fbb713247217dca8584d4e106c44767931bf41
-SHA256: 36a4660482caa5da1282a5d607d6f75a5e585460fe78d665388d4671f6f4b84b
-Section: Utilities
-Homepage: http://mrbomst.github.io
-Description: The first real iOS system cleaner & optimizer
-Author: Ivano Bilenchi
-Depiction: http://mrbomst.github.io/depiction/icleanerpro/index.html
-Icon: file:///Applications/iCleaner.app/Icon.png
-Name: iCleaner Pro
-
-Package: com.cydiavn.icleanerpro
 Version: 7.6.4
 Architecture: iphoneos-arm
 Maintainer: CydiaVN <ios.appcrack@gmail.com>
@@ -284,6 +280,47 @@ Size: 3570140
 MD5sum: 3f74474c31e6e8681cfc6d559e44c268
 SHA1: e79395b65ceccda4088c0320a5c392d07c67df2d
 SHA256: b4538dd574a7de471cecb8aefa5448f513d6e94b132cbfb27cc90f1b04c09d25
+Section: Utilities
+Homepage: http://mrbomst.github.io
+Description: The first real iOS system cleaner & optimizer
+Author: Ivano Bilenchi
+Depiction: http://mrbomst.github.io/depiction/icleanerpro/index.html
+Icon: file:///Applications/iCleaner.app/Icon.png
+Name: iCleaner Pro
+
+Package: com.cydiavn.icleanerpro
+Version: 7.7.0~beta2
+Architecture: iphoneos-arm
+Maintainer: CydiaVN <ios.appcrack@gmail.com>
+Depends: firmware (>= 4.0), apt7, findutils, shell-cmds
+Conflicts: org.altervista.exilecom.icleaner
+Replaces: org.altervista.exilecom.icleaner
+Filename: ./debs/com.cydiavn.icleanerpro_7.7.0~beta2_iphoneos-arm.deb
+Size: 4679732
+MD5sum: b6af44def1ad6ca1d4306f18afca25d8
+SHA1: 78b4df693ae86b53fb2c00a8b3c3ca6015e9e5eb
+SHA256: 6ea4fa95cc5c5ad3fe3a1d80916182e79a766ed5f4adc78469aa1bd6c51a2fe2
+Section: Utilities
+Homepage: http://mrbomst.github.io
+Description: The first real iOS system cleaner & optimizer
+Author: Ivano Bilenchi
+Depiction: http://mrbomst.github.io/depiction/icleanerpro/index.html
+Icon: file:///Applications/iCleaner.app/Icon.png
+Name: iCleaner Pro
+
+Package: com.cydiavn.icleanerpro
+Version: 7.6.2
+Architecture: iphoneos-arm
+Maintainer: CydiaVN <ios.appcrack@gmail.com>
+Pre-Depends: apt, findutils, shell-cmds
+Depends: firmware (>= 4.0)
+Conflicts: org.altervista.exilecom.icleaner
+Replaces: org.altervista.exilecom.icleaner
+Filename: ./debs/com.cydiavn.icleanerpro_7.6.2_iphoneos-arm.deb
+Size: 3485490
+MD5sum: e753cd373d407fcee3bf7de77b6a28b8
+SHA1: 16fbb713247217dca8584d4e106c44767931bf41
+SHA256: 36a4660482caa5da1282a5d607d6f75a5e585460fe78d665388d4671f6f4b84b
 Section: Utilities
 Homepage: http://mrbomst.github.io
 Description: The first real iOS system cleaner & optimizer
@@ -312,25 +349,24 @@ Depiction: http://mrbomst.github.io/depiction/icleanerpro/index.html
 Icon: file:///Applications/iCleaner.app/Icon.png
 Name: iCleaner Pro
 
-Package: com.cydiavn.icleanerpro
-Version: 7.7.0~beta2
+Package: com.cydiavn.memsearch
+Version: 1.4
 Architecture: iphoneos-arm
 Maintainer: CydiaVN <ios.appcrack@gmail.com>
-Depends: firmware (>= 4.0), apt7, findutils, shell-cmds
-Conflicts: org.altervista.exilecom.icleaner
-Replaces: org.altervista.exilecom.icleaner
-Filename: ./debs/com.cydiavn.icleanerpro_7.7.0~beta2_iphoneos-arm.deb
-Size: 4679732
-MD5sum: b6af44def1ad6ca1d4306f18afca25d8
-SHA1: 78b4df693ae86b53fb2c00a8b3c3ca6015e9e5eb
-SHA256: 6ea4fa95cc5c5ad3fe3a1d80916182e79a766ed5f4adc78469aa1bd6c51a2fe2
+Depends: firmware (>= 8.0)
+Filename: ./debs/com.cydiavn.memsearch_1.4_iphoneos-arm.deb
+Size: 2867722
+MD5sum: a2fdf9ffb5fecba2b9a7c5b05037c929
+SHA1: af33f1613ff9ef42736c8fb26ee717cc91371457
+SHA256: 17515646eced8a41a5f6fa67b92f4dec7393ce4f33121e086bf6b4073944a25d
 Section: Utilities
 Homepage: http://mrbomst.github.io
-Description: The first real iOS system cleaner & optimizer
-Author: Ivano Bilenchi
-Depiction: http://mrbomst.github.io/depiction/icleanerpro/index.html
-Icon: file:///Applications/iCleaner.app/Icon.png
-Name: iCleaner Pro
+Description: Memory debug tool for iOS. Support iPhone and iPad above iOS 8.x
+Tag: purpose::uikit, compatible::ios8, compatible::ios9, compatible::ios10, compatible::ios11
+Author: Aidoo.TK
+Depiction: http://mrbomst.github.io/depiction/Gamegem/index.html
+Icon: file:///Applications/GameGemiOS.app/AppIcon29x29@2x.png
+Name: GameGem
 
 Package: com.cydiavn.memsearch
 Version: 1.1
@@ -361,25 +397,6 @@ Size: 2811124
 MD5sum: 19fb42d094aa431ea4c7d3f1701eed8d
 SHA1: 0ecc9a77dfa4f51c92279c548a027a7539028e28
 SHA256: a6cf04d833b25391b396d2ee946fd8f0a7c39d9f25079e4f9826f8f0446bb2fb
-Section: Utilities
-Homepage: http://mrbomst.github.io
-Description: Memory debug tool for iOS. Support iPhone and iPad above iOS 8.x
-Tag: purpose::uikit, compatible::ios8, compatible::ios9, compatible::ios10, compatible::ios11
-Author: Aidoo.TK
-Depiction: http://mrbomst.github.io/depiction/Gamegem/index.html
-Icon: file:///Applications/GameGemiOS.app/AppIcon29x29@2x.png
-Name: GameGem
-
-Package: com.cydiavn.memsearch
-Version: 1.4
-Architecture: iphoneos-arm
-Maintainer: CydiaVN <ios.appcrack@gmail.com>
-Depends: firmware (>= 8.0)
-Filename: ./debs/com.cydiavn.memsearch_1.4_iphoneos-arm.deb
-Size: 2867722
-MD5sum: a2fdf9ffb5fecba2b9a7c5b05037c929
-SHA1: af33f1613ff9ef42736c8fb26ee717cc91371457
-SHA256: 17515646eced8a41a5f6fa67b92f4dec7393ce4f33121e086bf6b4073944a25d
 Section: Utilities
 Homepage: http://mrbomst.github.io
 Description: Memory debug tool for iOS. Support iPhone and iPad above iOS 8.x
