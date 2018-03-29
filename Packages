@@ -1,3 +1,19 @@
+Package: com.cydia.confirminstalike
+Version: 0.0.2-1+debug
+Architecture: iphoneos-arm
+Maintainer: CydiaVN <ios.appcrack@gmail.com>
+Depends: mobilesubstrate
+Filename: ./debs/confirminstalike_0.0.2-1+debug.deb
+Size: 7496
+MD5sum: 01615c31a5bf98dceed421bf65bc5e80
+SHA1: 0aa3d2dbcd7ef9d7303801c63e3bd51e152365c6
+SHA256: a6d637c962aa117e47163dba52b267d9f03da372fd152524bc1302bc4d0c2a5f
+Section: Tweaks
+Description: Saves you from accidently liking a post older than 3 days on instagram
+Author: TonyK7
+Depiction: http://mrbomst.github.io/depictione/confirminstalike/index.html
+Name: ConfirmInstaLike
+
 Package: com.cydiavn.CCModules
 Version: 1.6-3
 Architecture: iphoneos-arm
@@ -59,6 +75,39 @@ Icon: file:///Applications/Anemone.app/icon.png
 Name: Anemone
 Sponsor: CydiaVN <http://mrbomst.github.io>
 
+Package: com.cydiavn.appdrawer
+Version: 1.5.1-1
+Architecture: iphoneos-arm
+Maintainer: CydiaVN <ios.appcrack@gmail.com>
+Depends: mobilesubstrate, applist, preferenceloader
+Filename: ./debs/appdrawer_1.5.1-1.deb
+Size: 82466
+MD5sum: a21b6e3ea9cce561d8a2e0ee8c6f97fd
+SHA1: 69e04665c2ca02d62666dc443e0575d6dbe827b8
+SHA256: e1e31c17c3005e23011267f64d22919ea98c283897c907293b7728328d0f8584
+Section: Tweaks
+Description: Android-style app drawer for iOS
+Author: Guillermo Moran (@fr0st)
+Depiction: http://mrbomst.github.io/depiction/appdrawer/index.html
+Name: AppDrawer
+
+Package: com.cydiavn.boxy3
+Version: 3.2.5-5+debug
+Architecture: iphoneos-arm
+Maintainer: CydiaVN <ios.appcrack@gmail.com>
+Depends: mobilesubstrate, preferenceloader
+Conflicts: info.rpdev.betterfiveicondock, info.rpdev.betterfivecolumnhomescreen, net.r-ch.iconoclasm
+Filename: ./debs/boxy3_3.2.5-5+debug.deb
+Size: 2599206
+MD5sum: 6d9f5f408557db424162b67ab330eab6
+SHA1: 77a438ac11f397e0f85462799814945da559b9be
+SHA256: cdc8b20225abd4b0f438c747213b7bab49609d7f6a13c17ee23baf4aa713c22a
+Section: Tweaks
+Description: Fully customize your icon layout! Have you ever run into an issue with space in your SpringBoard or are you just bored with the default layout of icons? Well, Boxy can fix both of those issues. Your icon layout is fully customizable with the variety of options configurable in the settings pane. You can adjust how far each icon is from each edge of the screen and how far each icon is from one another. These combinations can provide some pretty cool layouts. If you aren't the creative type or don't want to be bothered with testing each setting, there are presets available for you to choose from. You can align you icons in the the top half of the screen or the bottom half or even the top corners of the screen. Anything is really possible.Boxy also allows for more space for Dashboard X widgets. You no longer have to compromise with which apps you want on the home page of your SpringBoard, you can now have all of them on the screen plus your favorite widgets! Use it however you like, if you find a use for it that I didn't mention please don't hesitate to contact me and let me know, I love hearing feedback about my tweaks. Boxy is fully compatible with all current devices!
+Author: William Vabrinskas
+Depiction: http://mrbomst.github.io/depiction/Boxy3/index.html
+Name: Boxy 3
+
 Package: com.cydiavn.cariardream
 Version: 1.0.0
 Architecture: iphoneos-arm
@@ -74,6 +123,22 @@ Author: hatiato
 Depiction: https://mrbomst.github.io/depiction/carriardream/index.html
 Icon: file:///Library/Application Support/fontcariardream/Fonticon.png
 Name: Font Cariar dream
+
+Package: com.cydiavn.cclink
+Version: 0.0.3
+Architecture: iphoneos-arm
+Maintainer: CydiaVN <ios.appcrack@gmail.com>
+Depends: mobilesubstrate
+Filename: ./debs/cclink_0.0.3.deb
+Size: 6986
+MD5sum: 7451675f35ce75c9abbab1dfc0187320
+SHA1: 9aa78f46505044ff64b21d93211a56328a856b40
+SHA256: f8c0b18361984cf8bba6fa6d13a1b248a27c09d3b5e1b4b4b3189a74f4ed9abc
+Section: Tweaks
+Description: Copy now playing title/link in Control Center by pressing and holding on the title.
+Author: fidele007 <kforcefidele@yahoo.com>
+Depiction: https://mrbomst.github.io/depiction/CCLink/index.html
+Name: CCLink
 
 Package: com.cydiavn.colormybattery
 Version: 1.0-5+debug
@@ -92,21 +157,22 @@ Depiction: https://mrbomst.github.io/depiction/ColorMyBattery/index.html
 Icon: file:///Library/Application Support/ColorMyBattery/icon.png
 Name: ColorMyBattery
 
-Package: com.cydiavn.crackicleanerpro
-Version: 1.1
+Package: com.cydiavn.datameter
+Version: 1.4-1k
 Architecture: iphoneos-arm
 Maintainer: CydiaVN <ios.appcrack@gmail.com>
-Depends: sed, shell-cmds, system-cmds, uikittools (>= 1.1.4), coreutils-bin, coreutils
-Filename: ./debs/crackicleanerpro.deb
-Size: 3484390
-MD5sum: 673f3d41917edac71dcc25c14a2ec346
-SHA1: a65c4e29377fc47abbb5fd639f01f083e773c938
-SHA256: 5998e73448df6b785434734348cafe42eb84556c5e65bf04460bc514435dbb48
-Section: Utilities
-Description: cài icleaner pro trước rồi cài tweak crack này để full chức năng.
-Author: CydiaVN <ios.appcrack@gmail.com>
-Depiction: http://mrbomst.github.io/depiction/icleanercrack/index.html
-Name: Crack iCleaner Pro
+Depends: firmware (>= 7.0), mobilesubstrate (>= 0.9.5000), preferenceloader (>= 2.2.2)
+Filename: ./debs/datameter_1.4-1k.deb
+Size: 243476
+MD5sum: 13527154135f01c10e50b3284e5ab106
+SHA1: 0cd53f609834d0bf19878add5e32c30194764932
+SHA256: 4fde46e8c81de16384cb0d23efc961c3f2279ba8ece3c7450fa5cb784e97ba09
+Section: Addons
+Description: DataMeter for iOS 7-11 Notification Center
+Author: Minuit
+Depiction: http://mrbomst.github.io/depiction/datameter/index.html
+Icon: file:///Library/PreferenceBundles/DataMeterSettings.bundle/icon@2x.png
+Name: DataMeter
 
 Package: com.cydiavn.datameter
 Version: 1.4-3
@@ -125,6 +191,22 @@ Depiction: http://mrbomst.github.io/depiction/datameter/index.html
 Icon: file:///Library/PreferenceBundles/DataMeterSettings.bundle/icon@2x.png
 Name: DataMeter
 
+Package: com.cydiavn.dotss
+Version: 1.1.0
+Architecture: iphoneos-arm
+Maintainer: CydiaVN <ios.appcrack@gmail.com>
+Depends: mobilesubstrate
+Filename: ./debs/dotss_1.1.0.deb
+Size: 321570
+MD5sum: f5a85e73d680098938555d328ab6830a
+SHA1: 3f520759ff3ac09cf8f3e24ac4ca4594bb09099a
+SHA256: 5071fddb1194ebd77640636bc397529d362db4c110c2e36978baf9c855a62092
+Section: Tweaks
+Description: Add notification dots to your OLED screen!
+Author: Shyam Lad
+Depiction: http://mrbomst.github.io/depiction/dotss/index.html
+Name: Dots
+
 Package: com.cydiavn.edgy
 Version: 1.0.0
 Architecture: iphoneos-arm
@@ -140,23 +222,6 @@ Author: ifanvn
 Depiction: https://mrbomst.github.io/depiction/fontedgy/index.html
 Icon: file:///Library/Application Support/fontedgy/Fonticon.png
 Name: Font Edgy
-
-Package: com.cydiavn.ezcc
-Version: 1.1-4
-Architecture: iphoneos-arm
-Maintainer: CydiaVN (ios.appcrack@gmail.com)
-Depends: mobilesubstrate, com.cydiavn.silo
-Conflicts: com.m4cs.ezccbeta
-Filename: ./debs/com.cydiavn.ezcc_1.1-4_iphoneos-arm.deb
-Size: 121898
-MD5sum: e538332334a85ffc5d3814bc88190135
-SHA1: a2c5b813f4106b1afa9ab269c1adc05dad8aeabb
-SHA256: 55c3fdef573c5d57b8def9e20e7f23d252d1a5b06b760be86d0dd0f2cc2656ba
-Section: Tweaks
-Description: EzCC Module Tweak for iOS 11! Allows you to launch apps and activate system commands from the Control Center
-Author: Auxilium Team
-Depiction: http://mrbomst.github.io/depiction/EZCC/index.html
-Name: EzCC
 
 Package: com.cydiavn.ezcc
 Version: 0.0.4
@@ -185,6 +250,23 @@ Size: 102208
 MD5sum: 9b73c1452690870b6e491168c6cb62cc
 SHA1: 3564d9170c3398ee0cf55e549588e6ead6dfc5e5
 SHA256: c67c4b90f9b4a5e71208b0355a81b08b8cbe543b2f9d93c13dcf31604f6d4308
+Section: Tweaks
+Description: EzCC Module Tweak for iOS 11! Allows you to launch apps and activate system commands from the Control Center
+Author: Auxilium Team
+Depiction: http://mrbomst.github.io/depiction/EZCC/index.html
+Name: EzCC
+
+Package: com.cydiavn.ezcc
+Version: 1.1-4
+Architecture: iphoneos-arm
+Maintainer: CydiaVN (ios.appcrack@gmail.com)
+Depends: mobilesubstrate, com.cydiavn.silo
+Conflicts: com.m4cs.ezccbeta
+Filename: ./debs/com.cydiavn.ezcc_1.1-4_iphoneos-arm.deb
+Size: 121898
+MD5sum: e538332334a85ffc5d3814bc88190135
+SHA1: a2c5b813f4106b1afa9ab269c1adc05dad8aeabb
+SHA256: 55c3fdef573c5d57b8def9e20e7f23d252d1a5b06b760be86d0dd0f2cc2656ba
 Section: Tweaks
 Description: EzCC Module Tweak for iOS 11! Allows you to launch apps and activate system commands from the Control Center
 Author: Auxilium Team
@@ -225,6 +307,23 @@ Depiction: https://mrbomst.github.io/depiction/EZSwipe/index.html
 Icon: file:///Library/Application Support/EZSwipe/icon.png
 Name: EZSwipe
 
+Package: com.cydiavn.floatingdock
+Version: 1.0-3
+Architecture: iphoneos-arm
+Maintainer: CydiaVN <ios.appcrack@gmail.com>
+Depends: mobilesubstrate, org.thebigboss.libcolorpicker
+Filename: ./debs/floatingdock_1.0-3.deb
+Size: 28006
+MD5sum: 0e3d6c34eb1fae7c171570823bfd051d
+SHA1: cfcc9b980cf3f68dc99dc33eb1530cfd2a32324a
+SHA256: c48a06d198a7b0ff1b0f01c74061ac5560e75b03a96506cbc5042fec45622753
+Section: Tweaks
+Description: iPad like dock for iPhone! ipad dock cho iphone tr�n ios 11!
+Author: Kiran Patil
+Depiction: http://mrbomst.github.io/depiction/floatingdock/index.html
+Icon: file:///Library/Application Support/FloatingDock/icon.png
+Name: FloatingDock
+
 Package: com.cydiavn.futura
 Version: 1.0.0
 Architecture: iphoneos-arm
@@ -240,6 +339,23 @@ Author: Hatiato
 Depiction: https://mrbomst.github.io/depiction/futura/index.html
 Icon: file:///Library/Application Support/futura/Fonticon.png
 Name: Font Futura
+
+Package: com.cydiavn.hapticscroll
+Version: 2.1.0-1
+Architecture: iphoneos-arm
+Maintainer: CydiaVN <ios.appcrack@gmail.com>
+Depends: firmware (>= 9.0), mobilesubstrate, preferenceloader, applist
+Filename: ./debs/hapticscroll_2.1.0-1.deb
+Size: 23002
+MD5sum: 255daf498e7f4358f52e3e7c417461de
+SHA1: fa6bb566a646e84077c8d9214c67b54839c7cae9
+SHA256: c230cc7f3cd916f1b423b3a801f5c9345391d52c1d991194c0e244acd69e5fa9
+Section: Tweaks
+Description: Haptic feedback when top/bottom scroll limit is reached.
+Author: Hrvoje Kostic
+Depiction: http://mrbomst.github.io/depiction/hapticscroll/index.html
+Icon: file:///Library/PreferenceBundles/hapticscrollprefs.bundle/icon@2x.png
+Name: HapticScroll
 
 Package: com.cydiavn.hidedots11
 Version: 0.0.1-1
@@ -283,46 +399,21 @@ Icon: file:///Library/PreferenceBundles/HomeBarSizer.bundle/icon@2x.png
 Name: HomeBarSizer
 Sponsor: CydiaVN <ios.appcrack@gmail.com>
 
-Package: com.cydiavn.icleanerpro
-Version: 7.6.4
+Package: com.cydiavn.hyperion
+Version: 0.0.6-18
 Architecture: iphoneos-arm
 Maintainer: CydiaVN <ios.appcrack@gmail.com>
-Pre-Depends: apt, findutils, shell-cmds
-Depends: firmware (>= 4.0)
-Conflicts: org.altervista.exilecom.icleaner
-Replaces: org.altervista.exilecom.icleaner
-Filename: ./debs/com.cydiavn.icleanerpro_7.6.4_iphoneos-arm.deb
-Size: 3570140
-MD5sum: 3f74474c31e6e8681cfc6d559e44c268
-SHA1: e79395b65ceccda4088c0320a5c392d07c67df2d
-SHA256: b4538dd574a7de471cecb8aefa5448f513d6e94b132cbfb27cc90f1b04c09d25
-Section: Utilities
-Homepage: http://mrbomst.github.io
-Description: The first real iOS system cleaner & optimizer
-Author: Ivano Bilenchi
-Depiction: http://mrbomst.github.io/depiction/icleanerpro/index.html
-Icon: file:///Applications/iCleaner.app/Icon.png
-Name: iCleaner Pro
-
-Package: com.cydiavn.icleanerpro
-Version: 7.7.0~beta2
-Architecture: iphoneos-arm
-Maintainer: CydiaVN <ios.appcrack@gmail.com>
-Depends: firmware (>= 4.0), apt7, findutils, shell-cmds
-Conflicts: org.altervista.exilecom.icleaner
-Replaces: org.altervista.exilecom.icleaner
-Filename: ./debs/com.cydiavn.icleanerpro_7.7.0~beta2_iphoneos-arm.deb
-Size: 4679732
-MD5sum: b6af44def1ad6ca1d4306f18afca25d8
-SHA1: 78b4df693ae86b53fb2c00a8b3c3ca6015e9e5eb
-SHA256: 6ea4fa95cc5c5ad3fe3a1d80916182e79a766ed5f4adc78469aa1bd6c51a2fe2
-Section: Utilities
-Homepage: http://mrbomst.github.io
-Description: The first real iOS system cleaner & optimizer
-Author: Ivano Bilenchi
-Depiction: http://mrbomst.github.io/depiction/icleanerpro/index.html
-Icon: file:///Applications/iCleaner.app/Icon.png
-Name: iCleaner Pro
+Depends: mobilesubstrate
+Filename: ./debs/hyperion_0.0.6-18.deb
+Size: 211550
+MD5sum: 2b67c0360d23c0c141f31088e8a9ee95
+SHA1: 684ad79b2d77988cb7ecccf28f41911455ece850
+SHA256: 367854b5dffe1af8dc07457798d010c700380c99aaadce43f29b71b3fac35f1a
+Section: Tweaks
+Description: OLED notification tweak
+Author: Spark
+Depiction: http://mrbomst.github.io/depiction/hyperion/index.html
+Name: Hyperion
 
 Package: com.cydiavn.icleanerpro
 Version: 7.6.2
@@ -337,6 +428,27 @@ Size: 3485490
 MD5sum: e753cd373d407fcee3bf7de77b6a28b8
 SHA1: 16fbb713247217dca8584d4e106c44767931bf41
 SHA256: 36a4660482caa5da1282a5d607d6f75a5e585460fe78d665388d4671f6f4b84b
+Section: Utilities
+Homepage: http://mrbomst.github.io
+Description: The first real iOS system cleaner & optimizer
+Author: Ivano Bilenchi
+Depiction: http://mrbomst.github.io/depiction/icleanerpro/index.html
+Icon: file:///Applications/iCleaner.app/Icon.png
+Name: iCleaner Pro
+
+Package: com.cydiavn.icleanerpro
+Version: 7.6.4
+Architecture: iphoneos-arm
+Maintainer: CydiaVN <ios.appcrack@gmail.com>
+Pre-Depends: apt, findutils, shell-cmds
+Depends: firmware (>= 4.0)
+Conflicts: org.altervista.exilecom.icleaner
+Replaces: org.altervista.exilecom.icleaner
+Filename: ./debs/com.cydiavn.icleanerpro_7.6.4_iphoneos-arm.deb
+Size: 3570140
+MD5sum: 3f74474c31e6e8681cfc6d559e44c268
+SHA1: e79395b65ceccda4088c0320a5c392d07c67df2d
+SHA256: b4538dd574a7de471cecb8aefa5448f513d6e94b132cbfb27cc90f1b04c09d25
 Section: Utilities
 Homepage: http://mrbomst.github.io
 Description: The first real iOS system cleaner & optimizer
@@ -365,24 +477,57 @@ Depiction: http://mrbomst.github.io/depiction/icleanerpro/index.html
 Icon: file:///Applications/iCleaner.app/Icon.png
 Name: iCleaner Pro
 
-Package: com.cydiavn.memsearch
-Version: 1.4
+Package: com.cydiavn.icleanerpro
+Version: 7.7.0~beta2
 Architecture: iphoneos-arm
 Maintainer: CydiaVN <ios.appcrack@gmail.com>
-Depends: firmware (>= 8.0)
-Filename: ./debs/com.cydiavn.memsearch_1.4_iphoneos-arm.deb
-Size: 2867722
-MD5sum: a2fdf9ffb5fecba2b9a7c5b05037c929
-SHA1: af33f1613ff9ef42736c8fb26ee717cc91371457
-SHA256: 17515646eced8a41a5f6fa67b92f4dec7393ce4f33121e086bf6b4073944a25d
+Depends: firmware (>= 4.0), apt7, findutils, shell-cmds
+Conflicts: org.altervista.exilecom.icleaner
+Replaces: org.altervista.exilecom.icleaner
+Filename: ./debs/com.cydiavn.icleanerpro_7.7.0~beta2_iphoneos-arm.deb
+Size: 4679732
+MD5sum: b6af44def1ad6ca1d4306f18afca25d8
+SHA1: 78b4df693ae86b53fb2c00a8b3c3ca6015e9e5eb
+SHA256: 6ea4fa95cc5c5ad3fe3a1d80916182e79a766ed5f4adc78469aa1bd6c51a2fe2
 Section: Utilities
 Homepage: http://mrbomst.github.io
-Description: Memory debug tool for iOS. Support iPhone and iPad above iOS 8.x
-Tag: purpose::uikit, compatible::ios8, compatible::ios9, compatible::ios10, compatible::ios11
-Author: Aidoo.TK
-Depiction: http://mrbomst.github.io/depiction/Gamegem/index.html
-Icon: file:///Applications/GameGemiOS.app/AppIcon29x29@2x.png
-Name: GameGem
+Description: The first real iOS system cleaner & optimizer
+Author: Ivano Bilenchi
+Depiction: http://mrbomst.github.io/depiction/icleanerpro/index.html
+Icon: file:///Applications/iCleaner.app/Icon.png
+Name: iCleaner Pro
+
+Package: com.cydiavn.linktunesios8
+Version: 1.4.5
+Architecture: iphoneos-arm
+Maintainer: CydiaVN <ios.appcrack@gmail.com>
+Depends: firmware (>= 8.0), mobilesubstrate, com.cydiavn.linktunesplugins
+Filename: ./debs/linktunesios8_1.4.5.deb
+Size: 1089074
+MD5sum: 908d99341fe06c4e658596455ff3359d
+SHA1: 10afc89e09fb2fdb3a0a175c4cc7a3c690996ad0
+SHA256: 8d059bc153c77c1c9ee13c42a22c1a6a6dee27b3ba829ff6940d1eadf7e8a569
+Section: Tweaks
+Description: A new way to download Mp3 for free directly from iTunesStore! An HackYouriPhone Exclusive, ENJOY IT :)
+Author: PowerSDev
+Depiction: http://mrbomst.github.io/depiction/linktunesios8/index.html
+Name: LinkTunes for iOS
+
+Package: com.cydiavn.linktunesplugins
+Version: 1.1
+Architecture: iphoneos-arm
+Maintainer: CydiaVN <ios.appcrack@gmail.com>
+Depends: firmware (>= 7.0), mobilesubstrate
+Filename: ./debs/linktunesplugins_1.1.deb
+Size: 7750
+MD5sum: f666672e24f556e4d514ea303e10cf03
+SHA1: a9d287b6888922b7389c7c0d1ef73e15c086709d
+SHA256: ba6a0406454c7e40130bf2089a6fd62db12a1b8c725f4d60c1e2294719785bc0
+Section: Tweaks
+Description: A collection of plugins for LinkTunes
+Author: HackYouriPhone
+Depiction: http://mrbomst.github.io/depiction/linktunesplugins/index.html
+Name: LinkTunes plugins
 
 Package: com.cydiavn.memsearch
 Version: 1.1
@@ -413,6 +558,25 @@ Size: 2811124
 MD5sum: 19fb42d094aa431ea4c7d3f1701eed8d
 SHA1: 0ecc9a77dfa4f51c92279c548a027a7539028e28
 SHA256: a6cf04d833b25391b396d2ee946fd8f0a7c39d9f25079e4f9826f8f0446bb2fb
+Section: Utilities
+Homepage: http://mrbomst.github.io
+Description: Memory debug tool for iOS. Support iPhone and iPad above iOS 8.x
+Tag: purpose::uikit, compatible::ios8, compatible::ios9, compatible::ios10, compatible::ios11
+Author: Aidoo.TK
+Depiction: http://mrbomst.github.io/depiction/Gamegem/index.html
+Icon: file:///Applications/GameGemiOS.app/AppIcon29x29@2x.png
+Name: GameGem
+
+Package: com.cydiavn.memsearch
+Version: 1.4
+Architecture: iphoneos-arm
+Maintainer: CydiaVN <ios.appcrack@gmail.com>
+Depends: firmware (>= 8.0)
+Filename: ./debs/com.cydiavn.memsearch_1.4_iphoneos-arm.deb
+Size: 2867722
+MD5sum: a2fdf9ffb5fecba2b9a7c5b05037c929
+SHA1: af33f1613ff9ef42736c8fb26ee717cc91371457
+SHA256: 17515646eced8a41a5f6fa67b92f4dec7393ce4f33121e086bf6b4073944a25d
 Section: Utilities
 Homepage: http://mrbomst.github.io
 Description: Memory debug tool for iOS. Support iPhone and iPad above iOS 8.x
@@ -584,11 +748,11 @@ Author: Mrbomst
 Depiction: https://mrbomst.github.io/depiction/Spotify/index.html
 Name: SpotifyVip
 
-Package: 
+Package: com.yourepo.cydiavn.crackicleanerpro
 Version: 1.0
 Architecture: iphoneos-arm
 Depends: sed, shell-cmds, system-cmds, uikittools (>= 1.1.4), coreutils-bin, coreutils
-Filename: 
+Filename: ./debs/com.yourepo.cydiavn.crackicleanerpro_1.0_iphoneos-arm.deb
 Size: 3484322
 MD5sum: af7304f432a56579d0bde57c612ad89c
 SHA1: 698cfe0bc454ec672fc2a9782e4141cda82f978e
