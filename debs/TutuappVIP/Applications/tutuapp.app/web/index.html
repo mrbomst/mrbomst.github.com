@@ -1,0 +1,362 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>兔兔助手WIFI管理</title>
+	<link rel="stylesheet" type="text/css" href="style/tutu.css" />
+</head>
+<body>
+	<!-- Header -->
+	<div class="header_wrap">
+		<div class="wrap header">
+			<h1><a href="http://www.tutuapp.com" target="_blank"><img src="images/logo.png" height="50" width="142" alt="兔兔助手" /><em>兔兔助手</em></a></h1>
+			<div class="nav">
+				<ul>
+					<li><a href="#">软件介绍</a></li>
+					<li><a href="#">意见反馈</a></li>
+					<li><a href="#">关于我们</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="wrap sub_title">
+		<h2>Wi-Fi本地管理</h2>
+	</div>
+	
+	<!-- Container -->
+	<div class="container_wrap">
+		<div class="container app_shell">
+			<!-- 应用列表 -->
+			<div id="app_list" class="content app_list no_app">
+			<!-- <div id="app_list" class="content app_list"> -->
+				<div class="inner">
+					<div class="title"><h3>应用文件列表</h3></div>
+					<div id="app_list_panel" class="list_panel">
+						<ul></ul>
+					</div>
+				</div>
+			</div>
+			<!-- APP 上传 -->
+			<div class="sliderbar upload_app">
+				<form action="upload_app/" method="post" enctype="multipart/form-data">
+					<div id="upload_shell" class="upload_app_inner">
+					<!-- <div class="upload_app_inner active"> -->
+						<div id="drag_upload" class="drag_upload"><em>拖拽文件到此上传</em></div>
+						<div class="upload_btn" title="选择文件上传"><span>选择文件上传</span><input type="file" name="choose_app" id="choose_app" multiple hidefocus /></div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	
+	<!-- Footer -->
+	<div class="footer_wrap">
+		<div class="wrap footer">
+			<p>Copyright 2007-2013 &copy; TutuApp.COM&reg;. All rights reserved.</p>
+			<p>粤ICP备07011435号-4</p>
+		</div>
+	</div>
+	
+	<script type="text/javascript" src="js/jquery-1.7.min.js"></script>
+	<script type="text/javascript">
+	jQuery(function($){
+		var 
+		global = window,
+		supportMultipleFile = !!(global.FormData || global.FileList), //多文件支持
+		supportXhrFile = !!(global.XMLHttpRequest && new XMLHttpRequest().upload); //XHR Level 2 支持
+		
+		var 
+		chooseApp = $('#choose_app'),
+		dragShell = $('#drag_upload'),
+		uploadShell = $('#upload_shell'),
+		uploadForm = $(chooseApp[0].form),
+		stopBubbleAndPreventDef = function(e){
+			if(!!e){
+				e.preventDefault();
+				e.stopPropagation();
+			}
+		},
+		//AppUploader
+		AppUploader = (function(){
+			var 
+			_paddingLeft = function(str, len, padding){
+				return (new Array(len + 1).join(padding || '0') + str).slice(-len);
+			},
+			_getFitTime = function(date){
+				date = date || new Date();
+				var ret = _paddingLeft(date.getMonth() + 1, 2) + '-' + _paddingLeft(date.getDate(), 2) + ' ';
+				ret += _paddingLeft(date.getHours(), 2) + ':' + _paddingLeft(date.getMinutes(), 2);
+				return ret;
+			},
+			_fill = function(tmpl, data){
+				for(var k in data){
+					tmpl = tmpl.replace(new RegExp('\{' + k + '\}', 'g'), data[k]);
+				}
+				return tmpl;
+			},
+			Uploader = function(id, file, initStatus){
+				this.init(id, file, initStatus);
+			};
+			Uploader.cache = [];
+			Uploader.elemShell = $('#app_list_panel ul');
+			Uploader.prototype = {
+				constructor: Uploader,
+				init: function(id, file, initStatus){
+					this.id = id;
+					this.file = file;
+					this.name = file.name;
+					this.size = ~~file.size;
+					this.extName = this.name.slice(this.name.lastIndexOf('.'));
+					this.fitSize = this.getFitSize();
+					this.createTime = _getFitTime();
+					this.buildElem().initState(initStatus || 'uploading').appendToList();
+					Uploader.cache.push(this);
+				},
+				getFitSize: function(){
+					var size = this.size;
+					if(size < 0){
+						return '未知';
+					}
+					else if(size < 1024){
+						return size + 'Byte';
+					}
+					else if(size < 1024 * 1024){
+						return (size/1024).toFixed(2) + 'KB';
+					}
+					else if(size < 1024 * 1024 * 1024){
+						return (size/1024/1024).toFixed(2) + 'MB';
+					}
+					else if(size < 1024 * 1024 * 1024 * 1024){
+						return (size/1024/1024/1024).toFixed(2) + 'GB';
+					}
+					return size;
+				},
+				_htmlTmpl: '<span class="icon"></span><span class="tit">{name}</span><span class="type" title="文件类型">IPA</span><span class="size" title="文件大小">{fitSize}</span><span class="timer">{createTime}</span><span class="status">正在上传</span><div class="process"><em style="width:2%"></em></div><span class="speed">0Kb/s</span><span class="time_remaining">00:00</span>',
+				buildElem: function(){
+					var li = document.createElement('li');
+					li.className = Uploader.cache.length % 2 === 0 ? 'even' : '';
+					li.innerHTML = _fill(this._htmlTmpl, this);
+					this.elem = $(li);
+					this.elem.statusElem = this.elem.find('.status');
+					this.elem.processBar = this.elem.find('.process em');
+					this.elem.speedElem = this.elem.find('.speed');
+					this.elem.timeRemainingElem = this.elem.find('.time_remaining');
+					return this;
+				},
+				_statusMessages: {uploading:'正在上传', installing:'正在安装', success:'安装成功', fail:'安装失败'},
+				initState: function(status, process, speed, timeRemaining, msg){
+					var elem = this.elem;
+					if(status !== this.status){
+						elem.removeClass(this.status).addClass(status);
+					}
+					this.status = status;
+					
+					elem.statusElem.html(msg || this._statusMessages[status] || '');
+					if(status === 'uploading' || status === 'installing'){
+						process = Math.max(2, Math.min(100, ~~process));
+						elem.processBar.css('width', process + '%');
+						elem.timeRemainingElem.html(timeRemaining);
+						elem.speedElem.html(speed);
+					}
+					return this;
+				},
+				appendToList: function(){
+					Uploader.elemShell.prepend(this.elem);
+					if(Uploader.cache.length === 0){
+						$('#app_list').removeClass('no_app');
+					}
+					Uploader.startPingProcess();
+					return this;
+				}
+			};
+			//打点上传进度
+			Uploader.pingTimeoutCount = 0;
+			Uploader.startPingProcess = function(){
+				var timeout = 5; //超时时间(s)
+				if(Uploader.pingXhr && Uploader.pingXhr.abort){
+					Uploader.pingXhr.abort();
+				}
+				var loadedCount = 0;
+				Uploader.pingXhr = $.ajax({
+					type: 'get',
+					cache: false,
+					dataType: 'json',
+					timeout: timeout * 1000,
+					url: 'upload_process.json',
+					success: function(data){
+						if(!data){ return;}
+						
+						var item, cache = Uploader.cache;
+						$.each(cache, function(){
+							item = data[this.id];
+							if(!!item && this.status !== 'success' && this.status !== 'fail'){
+								this.initState(item.status, item.process, item.speed, item.time_remaining, item.message);
+								if(this.status === 'success' || this.status === 'fail'){
+									loadedCount++;
+								}
+							}
+						});
+					},
+					complete: function(xhr, status){
+						clearTimeout(Uploader.pingTimer);
+						
+						//Network Err || TimeoutCount >= 2
+						if(status === 'error' || status === 'timeout' && ++Uploader.pingTimeoutCount % 2 === 0){
+							if(global.confirm('检测到您与服务器可能已经断开连接，是否重新载入页面？')){
+								Uploader.cache = [];
+								Uploader.pingTimeoutCount = 0;
+								return location.reload(true);
+							}
+						}
+
+						if(loadedCount < Uploader.cache.length){
+							Uploader.pingTimer = setTimeout(function(){
+								Uploader.startPingProcess();
+							}, 886);
+						}
+						else{
+							Uploader.stopPingProcess();
+						}
+					}
+				});
+			};
+			Uploader.stopPingProcess = function(){
+				if(Uploader.pingXhr && Uploader.pingXhr.abort){
+					Uploader.pingXhr.abort();
+				}
+			};
+			return Uploader;
+		})(),
+		_uuid = +(new Date()),
+		_getUuid = function(){
+			return ++_uuid;
+		},
+		racceptExt = /\.ipa$/i,
+		uploadFieldPrefix = chooseApp.attr('name') + '_',
+		uploadFiles = function(files){
+			if(!files || !files.length){ return; }
+			
+			var 
+			app, file,
+			data, xhr,
+			errFiles = [],
+			len = files.length, i = len - 1,
+			uploadUrl = uploadForm.attr('action');
+
+			for(; i>=0; i--){
+				file = files[i];
+				if(!!file && file.size > 0 && racceptExt.test(file.name)){
+					data = new FormData();
+					app = new AppUploader(uploadFieldPrefix + _getUuid(), file, 'uploading');
+					data.append(app.id, file);
+					
+					//XHR Post File
+					xhr = new XMLHttpRequest();
+					xhr.open('POST', uploadForm.attr('action'), true);
+					xhr.send(data);
+				}
+				else{
+					errFiles.push(file);
+				}
+			}
+			
+			if(len === 1 && errFiles.length > 0 || errFiles.length >= len){
+				return alert('请选正确的IPA软件包！');
+			}
+		};
+
+		//多文件上传支持
+		if(supportMultipleFile && supportXhrFile){
+			chooseApp.bind('change', function(e){
+				uploadFiles(this.files);
+				this.value = '';
+			});
+			
+			//Drop Files
+			uploadShell.bind('dragover', function(e){
+				stopBubbleAndPreventDef(e);
+				uploadShell.addClass('active');
+			})
+			.bind('dragleave', function(e){
+				stopBubbleAndPreventDef(e);
+				uploadShell.removeClass('active');
+			})
+			.bind('drop', function(e){
+				stopBubbleAndPreventDef(e);
+				
+				e = e.originalEvent;
+				uploadFiles(e.dataTransfer.files);
+				uploadShell.removeClass('active');
+			});
+			
+			//目测Safari 5.0.3 下的浏览器均不支持Drop文件
+			if(/version\/([^\s]+)\ssafari/i.test(navigator.userAgent) && parseFloat(RegExp.$1) < 5.1){
+				uploadShell.addClass('not_support_drop');
+			}
+
+			//Prevent Document Drop
+			$(document).bind('dragover', stopBubbleAndPreventDef).bind('dragleave', stopBubbleAndPreventDef).bind('drop', stopBubbleAndPreventDef);
+		}
+		//普通表单上传
+		else{
+			uploadShell.addClass('not_support_drop');
+			
+			//Extend $.getUploadIframe
+			;(function(document, $){
+				var _uuid = 0, _noop = function(){}, _getUid = function(){ return ++_uuid; };
+				$.getUploadIframe = function(onsuccess, onerror){
+					var ifaPanel = document.createElement('div'), name = 'upload_ifa_' + _getUid();
+					ifaPanel.innerHTML = '<iframe src="javascript:false" frameborder="0" name="' + name + '" id="' + name + '"></iframe>';
+					ifaPanel.style.cssText = 'display:none';
+					
+					var ifa = $(ifaPanel.getElementsByTagName('iframe')[0]);
+					document.body && document.body.appendChild(ifaPanel);
+					ifa.one('load', function(){
+						try{
+							(onsuccess || _noop).call(global, $.parseJSON(ifa[0].contentWindow.document.getElementById('upload_ret').value));
+						}
+						catch(_){
+							(onerror || _noop).call(global);
+						}
+						document.body.removeChild(ifaPanel);
+						ifa = null;
+					});
+					return {name:name, iframe:ifa};
+				};
+			})(global.document, jQuery);
+			//Iframe 上传
+			chooseApp.bind('change', function(e){
+				if(racceptExt.test(this.value)){
+					var name = uploadFieldPrefix + _getUuid(), ifaObj = $.getUploadIframe();
+					this.setAttribute('name', name);
+					uploadForm.attr('target', ifaObj.name);
+					uploadForm.submit();
+					this.value = '';
+					
+					var 
+					file = { size:-1, name:this.value.slice(this.value.replace(/\\/g, '/').lastIndexOf('/') + 1) },
+					app = new AppUploader(name, file, 'uploading');
+				}
+				else{
+					alert('请选正确的IPA软件包！');
+				}
+			});
+		}
+		
+		//Before Unload
+		global.onbeforeunload = function(){
+			window.AppUploader = AppUploader;
+			var cache = AppUploader.cache, i = cache.length - 1;
+			for(; i>=0; i--){
+				if(cache[i].status !== 'success' && cache[i].status !== 'fail'){
+					return '当前有APP正在上传安装，刷新页面后将无法继续安装；是否继续？';
+				}
+			}
+		};
+		
+		//preventDef uploadForm Submit
+		//uploadForm.bind('submit', stopBubbleAndPreventDef);
+	});
+	</script>
+</body>
+</html>

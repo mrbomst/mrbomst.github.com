@@ -1,0 +1,11 @@
+Package: com.cydiavn.tutuappvip
+Name: Tutuapp Vip
+Version: 1.7.3+debug
+Architecture: iphoneos-arm
+Description: Crack ?ng d?ng tutuapp!
+Depiction: http://mrbomst.github.io/depiction/tutuappvip/index.html
+Author: CydiaVN
+Section: Applications
+Maintainer: CydiaVN <ios.appcrack@gmail.com>
+Depends: mobilesubstrate, net.angelxwind.appsyncunified
+

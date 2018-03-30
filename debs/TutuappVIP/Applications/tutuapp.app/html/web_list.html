@@ -1,0 +1,177 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>列表页 - 威锋兔兔助手</title>
+	<meta name="format-detection" content="telphone=no" />
+	<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+	<noscript><meta http-equiv="X-Frame-Options" content="deny" /></noscript>
+	<link rel="stylesheet" type="text/css" href="style/tutu_app.css" />
+	<script type="text/javascript" src="js/ds.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+</head>
+<body>
+	<!-- Container -->
+	<div class="container">
+		<!-- Top Bar -->
+		<div id="topbar" class="topbar"></div>
+		
+		<!-- Content -->
+		<div class="content">
+			<div class="nothing hide" id="nodata">
+            <img src="images/nothing.png" width="48" height="86"><br/>
+                	暂无信息
+            </div>
+            <div class="nothing" id="loaddata">
+                <img src="images/loading.gif" width="80" height="80"><br/>
+               	 加载中...
+            </div>
+        	<!-- wait -->
+			<div id="uninstall" class="wait hide">
+				<ul id="applist">
+				
+				</ul>
+			</div>
+             <!-- t_app -->
+             <!-- 
+            <div class="wait">
+                <ul>
+                    <li>
+                        <i class="icon"><img src="images/ico.png" width="50" height="50"></i>
+                        <p class="name">威锋论坛客户端</p>
+                        <span class="date">威锋客户端</span>
+                        <a class="more" href="#"></a>
+                    </li>
+                    <li>
+                        <i class="icon"><img src="images/ico.png" width="50" height="50"></i>
+                        <p class="name">威锋论坛客户端</p>
+                        <span class="date">威锋客户端</span>
+                        <a class="more" href="#"></a>
+                    </li>
+                    <li class="fouce">
+                        <i class="icon"><img src="images/ico.png" width="50" height="50"></i>
+                        <p class="name">威锋论坛客户端</p>
+                        <span class="date">威锋客户端</span>
+                        <a class="more" href="#"></a>
+                    </li>
+                    <li>
+                        <i class="icon"><img src="images/ico.png" width="50" height="50"></i>
+                        <p class="name">威锋论坛客户端</p>
+                        <span class="date">威锋客户端</span>
+                        <a class="more" href="#"></a>
+                    </li>
+                </ul>
+            </div>
+             -->
+		</div>
+		
+		<!-- Global Menu -->
+		<div id="global_menu" class="global_menu"></div>
+	</div>
+	
+	<!-- Loading -->
+	<div id="loading" class="loading"><div class="loading_inner"><i class="ico"></i>正在加载，请稍后...</div></div>
+	
+	
+	<script type="text/javascript">
+	ds.setBaseParams({
+		baseUrl: 'http://192.168.9.166:8081/tutuapp/',  // 测试
+		baseUid: 3255131,
+	});
+	
+	
+	ds.initBaseViewEvent(); //BaseViewEvent
+	window.g = {isLoading:false};
+	ds.ready(function(){
+		g.baseUrl = ds.getBaseParam('baseUrl');
+		g.baseUid = ds.getBaseParam('baseUid');
+		g.page = 1;
+		g.status = 'all';
+		showAppList();
+	});
+	
+	var showAppList = function(){
+		g.isLoading = true;
+		ds.ajax({
+			url:g.baseUrl + '/index.php?r=inlineWeb/webAppList',
+			type:'post',
+			data:{'baseUid':g.baseUid, 'page':g.page, 'status':g.status},
+			dataType:'json',
+			error:function(){
+				ds.notifyAppPageError('Oops！页面加载失败了，请稍候重试！'); 
+			 },
+			success: function(value){
+				ds.notifyAppPageReady(); 
+				if(value.success == '1'){
+					if(typeof value.info.data.length == 'number' && value.info.data.length > 0){
+						var data = value.info.data;
+						var totalPage = value.info.totalPage;
+						var html = ds.tmpl(ds.$d('appList_tmpl').innerHTML, {
+							data: data,
+						});
+						ds.append(ds.$d('applist'), html);
+						if(g.page < totalPage){
+							g.page++;
+							g.isLoading = false;
+						}
+					}
+				}
+				else{
+					ds.notifyApp('wp://oatu?notify=info&info=' + encodeURIComponent(value.info));
+				}
+				if(g.page == 1){
+					ds.hide(ds.$d('loaddata'));
+					if(typeof value.info.data.length == 'number' && value.info.data.length == 0){
+						ds.show(ds.$d('nodata'));
+					}
+					else{
+						ds.show(ds.$d('uninstall'));
+					}
+				}
+
+			},
+			complete:function(){
+				
+			}
+		});
+	}
+	
+	ds.on(window,'scroll',function(){
+		if(document.documentElement.offsetHeight-(window.pageYOffset+document.documentElement.clientHeight) < 100)
+		{
+			if(g.isLoading == false){
+				showAppList();
+			}
+		}
+	});
+	</script>
+	<!-- new/downloading/downloadfinish/installed/delete  -->
+	<script id="appList_tmpl" type="text/tmpl">
+		<% for(var i = 0; i < data.length; i++){ %>
+			<li data-id=<%=data[i].id%> >
+				<i class="icon"><img src="<%=data[i].tutuappicon%>" width="50" height="50"></i>
+				<p class="name"><%=data[i].tutuappname%></p>
+				<span class="date">
+					<% if(data[i].tutufilesize.length > 0) {%>
+						<%=data[i].tutufilesize%>，
+					<% } %>
+
+				<!--<%=data[i].create_date%>&nbsp;已上传</span>-->
+				<a class="fix" href="#" data-status="<%=data[i].status%>" data-url="<%=data[i].tutuappurl%>">
+					<% if(data[i].status == 'downloading' ){%>
+						正在下载
+					<%}else if(data[i].status == 'downloadfinish'){%>
+						安装
+					<%}else if(data[i].status == 'installed'){%>
+						已安装
+					<%}else if(data[i].status == 'new'){%>
+						下载
+					<%}%>
+				</a>
+			</li>
+		<% } %>
+	</script>
+	<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cdiv id='cnzz_stat_icon_30080219'%3E%3C/div%3E%3Cscript src='" + cnzz_protocol + "w.cnzz.com/c.php%3Fid%3D30080219' type='text/javascript'%3E%3C/script%3E"));</script>
+	
+</body>
+</html>

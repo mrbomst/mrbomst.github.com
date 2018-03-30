@@ -1,0 +1,207 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>列表页 - 威锋兔兔助手</title>
+	<meta name="format-detection" content="telphone=no" />
+	<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+	<noscript><meta http-equiv="X-Frame-Options" content="deny" /></noscript>
+	<link rel="stylesheet" type="text/css" href="style/tutu_app.css" />
+	<script type="text/javascript" src="js/ds.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+	<script type="text/javascript" src="js/tutuapp.js"></script>
+	
+</head>
+<body>
+	<!-- Container -->
+	<div class="container">
+		<!-- Top Bar -->
+		<div id="topbar" class="topbar"></div>
+		
+		<!-- Content -->
+		<div class="content">
+        	<div class="nothing" style="display:none" id="no_msg">
+            	<img src="images/nothing.png" width="48" height="86"><br/>
+                暂无信息
+            </div>
+            <div class="nothing" id="loading">
+                <img src="images/loading.gif" width="80" height="80"><br/>
+                加载中...
+            </div>
+        	<!-- wait -->
+			<div class="wait">
+				<ul id="wifi_wait_list">
+					
+				</ul>
+			</div>
+		</div>
+		
+		<!-- Global Menu -->
+		<div id="global_menu" class="global_menu"></div>
+	</div>
+	
+	<!-- Loading -->
+	<div id="loading" class="loading"><div class="loading_inner"><i class="ico"></i>正在加载，请稍后...</div></div>
+	
+	
+	<script type="text/javascript">
+	ds.initBaseViewEvent(); //BaseViewEvent
+	//所有与数据有关的操作，必须置于ds.ready内
+	
+	ds.ready(function(){
+		//获取全局基础参数
+		
+		var baseData = ds.getBaseParam('baseData');
+		if(typeof baseData==='undefined')
+		{
+			ds.hide(ds.$("#loading")[0]);
+			ds.show(ds.$("#no_msg")[0]);
+			return;
+		}
+		var baseData = JSON.parse(ds.getBaseParam('baseData'));
+		if(!ds.type(baseData)==='object'||baseData.length<=0)
+		{
+			ds.show(ds.$("#no_msg")[0]);
+			return;
+		}
+		var html = ds.tmpl(ds.$d('wifi_wait_list_tmpl').innerHTML, {
+				baseData: baseData,
+		});
+		ds.$d('wifi_wait_list').innerHTML = html;
+		ds.hide(ds.$("#loading")[0]);
+	});
+	window.writeNewData = function(data){
+		var html = ds.tmpl(ds.$d('wifi_wait_list_tmpl').innerHTML, {
+				baseData: data,
+		});
+		ds.prepend(ds.$d('wifi_wait_list'),html);
+		ds.hide(ds.$("#loading")[0]);
+		ds.hide(ds.$("#no_msg")[0]);
+		
+	};
+	
+	window.deleteData = function(fileNames){
+		for(var i = 0;i<fileNames.length;i++)
+		{
+			var obj = document.getElementById(fileNames[i]);
+			if(ds.type(obj) ==='li')
+			{
+				obj.parentNode.removeChild(obj);
+			}
+		}
+		if(ds.$('#wifi_wait_list li').length==0)
+		{
+			ds.show(ds.$("#no_msg")[0]);
+		}
+	};
+	
+	window.updateData = function(data){
+		var obj = document.getElementById(data[0]);
+		var html = '';
+		if(data[1]=="uploading"){
+			html = '<i class="icon"><img src="images/icon_60_60.png" width="50" height="50"></i><p class="name">'+autoAddEllipsis(data[0],12)+'</p>';
+			//html += '<div class="load_box" ><span class="fix_load"><em style="width:0%;"></em>';
+			html += '</span>上传中</div>';
+		}else if(data[1]=="uploadSuccess"){
+			html = '<i class="icon"><img src="images/icon_60_60.png" width="50" height="50"></i><p class="name">'+autoAddEllipsis(data[0],12)+'</p>';
+			//html += '<div class="load_box" ><span class="fix_load"><em style="width:0%;"></em>';
+			html += '</span>安装中</div>';
+		}else if(data[1]=="installSuccess"){
+			obj.className += ' reinstall';
+			html = '<i class="icon"><img src="images/icon_60_60.png" width="50" height="50"></i><p class="name">'+autoAddEllipsis(data[0],12)+'</p><span class="date">'+getFileChangeSize(data[3])+'，'+changeTime(data[2])+'已安装</span>';
+		}else if(data[1]=="installFail"){
+			obj.className += ' reinstall';
+			html = '<i class="icon"><img src="images/icon_60_60.png" width="50" height="50"></i><p class="name">'+autoAddEllipsis(data[0],12)+'</p><span class="date">'+getFileChangeSize(data[3])+'，'+changeTime(data[2])+'安装失败</span><a class="fix" href="javascript:;">重装</a>';
+		}
+		obj.innerHTML = html;
+	};
+	
+	ds.each(ds.$('#wifi_wait_list'), function(){
+		ds.delegate(this, '.fix', 'click', function(e){
+			var self = this.parentNode;
+			var fileName = self.getAttribute('data-id');
+		
+			var data = [fileName,"uploadSuccess"];
+			updateData(data);
+			ds.notifyApp('wp://oatu?handle=reinstall&fileName='+encodeURIComponent(fileName));
+		});
+	});
+	
+	function getFileChangeSize(fileSize)
+	{
+		fileSize = parseInt(fileSize);
+		if(fileSize < 1024)
+		{
+			return fileSize + "B";
+		}
+		var a = fileSize / 1024 ;
+		if(a > 1024.00)
+		{
+			a = a / 1024;
+			if(a > 1024.00)
+			{
+				a = a / 1024;
+				return (Math.round(a * 100) / 100).toFixed(2) + "GB";
+			}else
+			{
+				return (Math.round(a * 100) / 100).toFixed(2) + "MB";
+			}
+		}else
+		{
+			return (Math.round(a * 100) / 100).toFixed(2) + "KB";
+		}
+	}
+
+	</script>
+	
+	<script id="wifi_wait_list_tmpl" type="text/tmpl">
+		<% for(var i = 0 ; i < baseData.length; i ++){ %>
+			<%if(document.getElementById(baseData[i].fileName)!=null){continue;}%>
+			<%if(baseData[i].status=="uploading"){%>
+				<%if(i%2==0){%>
+					<li id="<%=baseData[i].fileName%>" data-id="<%=baseData[i].fileName%>">
+				<%}else{%>
+					<li id="<%=baseData[i].fileName%>" class="even" data-id="<%=baseData[i].fileName%>">
+				<%}%>
+				<i class="icon"><img src="images/icon_60_60.png" width="50" height="50"></i>
+				<p class="name"><%=autoAddEllipsis(baseData[i].fileName,12)%></p>
+				<!--<div class="load_box" ><span class="fix_load"><em style="width:0%;"></em>--></span>上传中</div>
+			<%}else if(baseData[i].status=="uploadSuccess"){%>
+				<%if(i%2==0){%>
+					<li id="<%=baseData[i].fileName%>" data-id="<%=baseData[i].fileName%>">
+				<%}else{%>
+					<li id="<%=baseData[i].fileName%>" class="even" data-id="<%=baseData[i].fileName%>">
+				<%}%>
+				<i class="icon"><img src="images/icon_60_60.png" width="50" height="50"></i>
+				<p class="name"><%=autoAddEllipsis(baseData[i].fileName,12)%></p>
+				<!--<div class="load_box" ><span class="fix_load"><em style="width:0%;"></em>--></span>安装中</div>
+			<%}else if(baseData[i].status=="installSuccess"){%>
+				<%if(i%2==0){%>
+					<li id="<%=baseData[i].fileName%>" data-id="<%=baseData[i].fileName%>" class="reinstall">
+				<%}else{%>
+					<li id="<%=baseData[i].fileName%>" class="even reinstall" data-id="<%=baseData[i].fileName%>">
+				<%}%>
+				<i class="icon"><img src="images/icon_60_60.png" width="50" height="50"></i>
+				<p class="name"><%=autoAddEllipsis(baseData[i].fileName,12)%></p>
+				<span class="date"><%=getFileChangeSize(baseData[i].fileSize)%>，<%=changeTime(baseData[i].date)%>已安装</span>
+				<!--<a class="fix" href="javascript:;">重装</a>-->
+			<%}else if(baseData[i].status=="installFail"){%>
+				<%if(i%2==0){%>
+					<li id="<%=baseData[i].fileName%>" data-id="<%=baseData[i].fileName%>" class="reinstall">
+				<%}else{%>
+					<li id="<%=baseData[i].fileName%>" class="even reinstall" data-id="<%=baseData[i].fileName%>">
+				<%}%>
+				<i class="icon"><img src="images/icon_60_60.png" width="50" height="50"></i>
+				<p class="name"><%=autoAddEllipsis(baseData[i].fileName,12)%></p>
+				<span class="date" ><%=getFileChangeSize(baseData[i].fileSize)%>，<%=changeTime(baseData[i].date)%>安装失败</span>
+				<a class="fix" href="javascript:;" >重装</a>
+			<%}%>
+				
+		   </li>
+		  
+		<% }%>
+	</script>
+	<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cdiv id='cnzz_stat_icon_30080219'%3E%3C/div%3E%3Cscript src='" + cnzz_protocol + "w.cnzz.com/c.php%3Fid%3D30080219' type='text/javascript'%3E%3C/script%3E"));</script>
+
+</body>
+</html>

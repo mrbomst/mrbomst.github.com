@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>关于我们 - 威锋兔兔助手</title>
+	<meta name="format-detection" content="telphone=no" />
+	<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+	<noscript><meta http-equiv="X-Frame-Options" content="deny" /></noscript>
+	<link rel="stylesheet" type="text/css" href="style/tutu_app.css" />
+	<script type="text/javascript" src="js/ds.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+</head>
+<body>
+	<!-- Container -->
+	<div class="container">
+		<!-- Top Bar -->
+		<div id="topbar" class="topbar"></div>
+		
+		<!-- Content -->
+		<div class="content">
+			<div class="about">
+				<span class="icon"><img src="images/about.png" width="65" height="66" /></span>
+				<h2>兔兔助手 <span id="fill_content">V1.6.1</span></h2>
+				<div class="inner">
+                    <p>兔兔助手VIP版是一款专门为高品质的IOS用户量身定做的手机助手。
+                    新推出的VIP版拥有更稳定的性能，收录更多的付费APP，采用全新的技术，真正实现永不闪退。海量汉化BT大作，应有尽有，爱玩游戏的你，还在等什么？快去下载吧！</p>
+                    <p class="qq_code">QQ群<span>378429667</span></p>
+                    <p class="web_site">官&nbsp;&nbsp;&nbsp;网<span><a href="http://www.tutuapp.com" target="_blank">tutuapp.com</a></span></p>
+                    <p class="copyright">Copyright 2016 &copy; TutuApp.com.<br>All rights reserved.</p>
+				</div>
+			</div>
+		</div>
+		
+		<!-- Global Menu -->
+		<div id="global_menu" class="global_menu"></div>
+	</div>
+	
+	<!-- Loading -->
+	<div id="loading" class="loading"><div class="loading_inner"><i class="ico"></i>正在加载，请稍后...</div></div>
+	
+	
+	<script type="text/javascript">
+	ds.initBaseViewEvent(); //BaseViewEvent
+	
+	//Ext ds.fill
+	ds.mix({
+		fill: function(data){
+			var tmpl = '<%=version%>';
+			ds.$d('fill_content').innerHTML = ds.tmpl(tmpl, data);
+		}
+	});
+	
+	//fill version
+	ds.DOMReady(function(){
+		var rver = /(v\d+\.\d+)/i;
+		if(rver.test(location.hash)){
+			ds.fill({
+				version: RegExp.$1
+			});
+		}
+	});
+	
+	//iPad
+	ds.DOMReady(function(){
+		//ds.isIPad = true;
+		if(ds.isIPad){
+			ds.addClass(document.documentElement, 'ipad');
+		}
+	});
+	</script>
+</body>
+</html>
